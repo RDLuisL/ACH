@@ -19,24 +19,24 @@ body {
 
 .parallax-image {
     display: block;
-    height: 58.75rem;
+    height: 20rem;/*gap de imagen*/
     width: 100%;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;
+    background-position-y: -90px;
 }
 
 .parallax-image-01 {
-    background-image: url("assets/autumn_forest.jpg");
+    background-image: url("assets/parallax_1.png");
 }
 
 .parallax-image-02 {
-    background-image: url("assets/forest_pathway.jpg");
+    background-image: url("assets/parallax_2.png");
 
 }
 
 .parallax-image-03 {
-    background-image: url("assets/winter_forest.jpg");
+    background-image: url("assets/parallax_3.png");
 }
 section {
     padding: 4rem;
