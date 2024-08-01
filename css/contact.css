@@ -1,0 +1,4 @@
+input::placeholder, select::placeholder {
+    font-size: 15px !important;
+    
+}
