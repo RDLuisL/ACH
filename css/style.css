@@ -15,6 +15,12 @@
 #99A0BC
 #EEEE92 */
 
+*{
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
 .logo-navbar {
     width: 35px;
 }
@@ -45,7 +51,7 @@
 }
 
 #spinner.show {
-    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    transition: opacity 2s ease-out, visibility 0s linear 2s;
     visibility: visible;
     opacity: 1;
 }
@@ -208,7 +214,7 @@
 .breadcrumb-item + .breadcrumb-item::before {
     color: var(--light);
 }
-
+/*** Header End ***/
 
 /*** Facts ***/
 .fact {
@@ -220,6 +226,7 @@
 
 
 /*** Service ***/
+
 .service .nav .nav-link {
     background: var(--light);
     transition: .5s;
@@ -237,11 +244,176 @@
 .nav-link h4 {
     font-size: 0.9rem; /*tamaño de letras*/
 }
+/*** Service End ***/
+
+
+/*** Paso a Paso ***/
+
+.gallery {
+    --n: 1; /* number of rows*/
+    --m: 7; /* number of columns */
+    --g: 0px;  /* control the gap */
+    --f: .4;   /* control the scale factor */
+    
+    display: grid;
+    gap: var(--g);
+    width: 100vw;
+    height: 70vh;
+    grid-template-columns: repeat(var(--m),auto);
+  }
+  
+  .gallery > img {
+    width: 0;
+    height: 0;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    filter: grayscale(80%);
+    transition: .35s linear;
+  }
+  
+  .gallery img:hover{
+    filter: grayscale(0);
+    width:  calc(100vh*var(--f)/var(--n));
+    height: calc(100vw*var(--f)/var(--m));
+  }
+  
+  /*** Paso a Paso End***/
+
+/*** Service Price Cards ***/
+
+.pricing-cards {
+    margin-top: -150px;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+  
+  .box-cards {
+    width: 1250px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card-header {
+    text-transform: uppercase;
+    letter-spacing: .15em;
+  }
+
+  .pkg-info {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: .1em;
+    line-height: 1.8em;
+  }
+  .amount {
+    text-align: center;
+    font-size: 1.7em;
+  }
+  .amount-bar {
+    background: var(--dark);
+  }
+  
+  hr {
+    width: 100px;
+    border: 2px solid #0078ff;
+    margin-bottom: 15px;
+  }
+  
+  .box-cards .card {
+        width: 1250px;
+        position: relative;
+        display: flex;
+        border: none;
+        /* justify-content: center; */
+        /* background-image: url('../img/kevlar.jpg'); */
+        /* background-repeat: no-repeat;   Evita la repetición de la imagen */
+        /* background-size: cover;        Asegura que la imagen cubra todo el contenedor */
+        /* background-position: center;   Centra la imagen */
+  }
+  
+  .box-cards .card .face {
+    width: 300px;
+    height: 200px;
+    transition: 1s;
+  }
+  
+  .box-cards .card .face.face1 {
+    position: relative;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #171717;
+    background-image: url("../img/kevlar.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+  
+  .box-cards .card:hover .face.face1 {
+    background: #fff;
+    transform: translateY(0);
+  }
+  
+  .box-cards .card .face.face1 .content h3 {
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+  }
+  
+  .box-cards .card:hover .face.face1 .content h3 {
+    color: var(--primary);
+    text-shadow:
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+    transition: 0.5s;
+  }
+  .box-cards .card:hover .face.face1 {
+    background-color: #ffffff;
+  background-image: url("#");
+    transition: 0.5s;
+  }
+  
+  .box-cards .card .face.face2 {
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    transform: translateY(-100px);
+  }
+  
+  .box-cards .card:hover .face.face2 {
+    transform: translateY(-15px);
+  }
+  
+  .box-cards .card .face.face2 .content p {
+    margin: 0;
+    padding: 0;
+  }
+/*** Service Price Cards End ***/
 
 /*** Booking ***/
 .booking {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/carousel-bg-2.jpg) center center no-repeat;
-    background-size: cover;
+    background-repeat: repeat;
+    background-size: contain;
+    box-shadow: 
+        0px 10px 10px rgba(0, 0, 0, 0.75),  /* Sombra hacia abajo */
+        0px -10px 10px rgba(0, 0, 0, 0.75); /* Sombra hacia arriba */
 }
 
 .bootstrap-datetimepicker-widget.bottom {
@@ -271,14 +443,18 @@
 }
 
 
+
 /*** Team ***/
 .team-item .team-overlay {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--primary);
+    background-image: url("/img/fiber_carbon_dark_mesh.jpg");
+    background-size: cover;
+    background-position: center;
     transform: scale(0);
     transition: .5s;
+    
 }
 
 .team-item:hover .team-overlay {
@@ -295,9 +471,10 @@
     background: var(--secondary)
 }
 
+/*** Team End ***/
 
 /*** Testimonial ***/
-.testimonial-carousel .owl-item .testimonial-text,
+/* .testimonial-carousel .owl-item .testimonial-text,
 .testimonial-carousel .owl-item.center .testimonial-text * {
     transition: .5s;
 }
@@ -330,13 +507,14 @@
 .testimonial-carousel .owl-dot.active {
     background: var(--primary);
     border-color: var(--primary);
-}
-
+} */
+/*** Testimonial End ***/
 
 /*** Footer ***/
 .footer {
-    background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url(../img/carousel-bg-1.jpg) center center no-repeat;
-    background-size: cover;
+    background-repeat: repeat;
+    background-size: contain;
+    box-shadow: 0px -10px 20px -5px rgba(0, 0, 0, 0.75);
 }
 
 .footer .btn.btn-social {
@@ -402,3 +580,11 @@
     padding-right: 0;
     border-right: none;
 }
+
+.back-to-top {
+            position: fixed;
+            left: 50%;
+            bottom: 20px;
+            transform: translateX(-50%);
+            z-index: 1000;
+        }

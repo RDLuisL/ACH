@@ -1,0 +1,244 @@
+.fancy-btn {
+  -webkit-appearance: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  position: relative;
+  top: 50%;
+  display: block;
+  min-width: 10%;
+  line-height: 55px;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding: 0 10px;
+  background-color: #F2594B;
+  color: #FFF;
+  border-radius: 3px;
+  transform: translateY(-50%);
+}
+.fancy-btn:hover {
+  background-color: #fa7268;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 40;
+  transition: opacity 0.25s ease 0s, visibility linear 0.35s;
+}
+.modal-overlay.state-show {
+  opacity: 0.7;
+  visibility: visible;
+  transition-delay: 0s;
+  transition-duration: 0.2s, 0s;
+}
+
+.modal-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  visibility: hidden;
+}
+.modal-frame.state-appear {
+  visibility: visible;
+}
+.modal-frame.state-appear .modal-inset {
+  animation: modalComeIn 0.25s ease;
+  visibility: visible;
+}
+.modal-frame.state-appear .modal-body {
+  opacity: 1;
+  transform: translateY(0) scale(1, 1);
+}
+.modal-frame.state-leave {
+  visibility: visible;
+}
+.modal-frame.state-leave .modal-inset {
+  animation: modalHeadOut 0.35s ease 0.1s;
+  visibility: visible;
+}
+.modal-frame.state-leave .modal-body {
+  opacity: 0;
+  transition-delay: 0s;
+  transition-duration: 0.35s;
+  transition-timing-function: ease;
+  transform: translateY(25px);
+}
+
+@-moz-document url-prefix() {
+  .modal-frame {
+    height: calc(100% - 55px);
+  }
+}
+
+.modal {
+  display: block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.modal-inset {
+  position: relative;
+  padding: 60px;
+  background-color: white;
+  min-width: 320px;
+  min-height: 126px;
+  margin: auto;
+  visibility: hidden;
+  box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.2);
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+  transform-style: preserve-3d;
+}
+.modal-inset .close {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  opacity: 0.4;
+}
+.modal-inset .close:hover {
+  opacity: 1;
+}
+
+.modal-body {
+  margin: auto;
+  opacity: 0;
+  transform: translateY(0) scale(0.8, 0.8);
+  transition-property: opacity, transform;
+  transition-duration: 0.25s;
+  transition-delay: 0.1s;
+}
+.modal-body h3 {
+  font-weight: 700;
+  padding-bottom: 22px;
+  display: block;
+  color: #F2594B;
+  text-align: center;
+}
+.modal-body p {
+  padding-bottom: 20px;
+}
+.modal-body .ps {
+  font-size: 12px;
+  opacity: 0.3;
+}
+
+@-webkit-keyframes modalComeIn {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0.8, 0.8);
+  }
+  65.5% {
+    transform: scale(1.03, 1.03);
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+@-moz-keyframes modalComeIn {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0.8, 0.8);
+  }
+  65.5% {
+    transform: scale(1.03, 1.03);
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+@keyframes modalComeIn {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0.8, 0.8);
+  }
+  65.5% {
+    transform: scale(1.03, 1.03);
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+@-webkit-keyframes modalHeadOut {
+  0% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0) scale(1, 1);
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(35px) scale(0.97, 0.97);
+  }
+}
+@-moz-keyframes modalHeadOut {
+  0% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0) scale(1, 1);
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(35px) scale(0.97, 0.97);
+  }
+}
+@keyframes modalHeadOut {
+  0% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0) scale(1, 1);
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(35px) scale(0.97, 0.97);
+  }
+}
+
+/* Botón de cerrar dentro del modal */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+  }
+  .close-btn:hover {
+    color: #F2594B;
+  }
+  

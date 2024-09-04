@@ -1,0 +1,639 @@
+/********** Template CSS **********/
+:root {
+    --primary: #DDDC2A;
+    --secondary: #0B0686;
+    --light: #F3F3EE;
+    --dark: #303E74;
+    --text-color-primary:#C4CBE1;
+}
+/* 
+#DDDC2A
+#0B0686
+#C4CBE1
+#F3F3EE
+#303E74
+#99A0BC
+#EEEE92 */
+
+.logo-navbar {
+    width: 35px;
+}
+
+.text-primary {
+    font-style: italic;
+    color: var(--dark);
+}
+.fw-medium {
+    font-weight: 600 !important;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+
+
+/*** Spinner ***/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*** Button ***/
+.btn {
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.btn.btn-primary,
+.btn.btn-secondary {
+    color: var(--text-color-primary);
+}
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-sm-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    border-radius: 2px;
+}
+
+
+/*** Navbar ***/
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    margin-right: 30px;
+    padding: 25px 0;
+    color: #FFFFFF;
+    font-size: 15px;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+
+@media (max-width: 991.98px) {
+    .navbar-light .navbar-nav .nav-link  {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+
+    .navbar-light .navbar-nav {
+        border-top: 1px solid #EEEEEE;
+    }
+}
+
+.navbar-light .navbar-brand,
+.navbar-light a.btn {
+    height: 75px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--dark);
+    font-weight: 500;
+}
+
+.navbar-light.sticky-top {
+    top: -100px;
+    transition: .5s;
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        border: none;
+        margin-top: 0;
+        top: 150%;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        top: 100%;
+        visibility: visible;
+        transition: .5s;
+        opacity: 1;
+    }
+}
+
+
+/*** Header ***/
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .7);
+    z-index: 1;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+@media (max-width: 768px) {
+    #header-carousel .carousel-item {
+        position: relative;
+        min-height: 450px;
+    }
+    
+    #header-carousel .carousel-item img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.page-header {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-header-inner {
+    background: rgba(0, 0, 0, .7);
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: var(--light);
+}
+/*** Header End ***/
+
+/*** Facts ***/
+.fact {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/carousel-bg-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*** Services Start ***/
+.service .service-item {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.service .service-item .service-img img {
+    transition: 0.5s;
+}
+
+.service .service-item:hover .service-img img {
+    transform: scale(1.2);
+}
+
+.service .service-item::after {
+    content: "";
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.service .service-item:hover:after {
+    height: 100%;
+    background: rgba(0, 0, 0, .4);
+}
+
+.service .service-item .service-content {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 50%; 
+    left: 0; 
+    transform: translateY(-50%);
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 3;
+}
+
+.service .service-item:hover .service-content {
+    opacity: 1;
+}
+
+.service .service-item:hover .service-content a.fs-4 {
+    color: var(--bs-white);
+    transition: 0.5s;
+}
+
+.service .service-item:hover .service-content a.fs-4:hover {
+    color: var(--bs-secondary);
+}
+
+.service .service-item .service-tytle {
+    position: absolute;
+    width: 100%;
+    height: 80px; 
+    bottom: 0; 
+    right: 0;
+    background: var(--bs-white);
+    display: flex;
+    transition: 0.5s;
+    z-index: 3;
+}
+
+.service .service-item:hover .service-tytle {
+    margin-right: -100%;
+}
+
+/*** Services End ***/
+
+/*** Paso a Paso ***/
+
+.gallery {
+    --n: 1; /* number of rows*/
+    --m: 7; /* number of columns */
+    --g: 0px;  /* control the gap */
+    --f: .4;   /* control the scale factor */
+    
+    display: grid;
+    gap: var(--g);
+    width: 100vw;
+    height: 70vh;
+    grid-template-columns: repeat(var(--m),auto);
+  }
+  
+  .gallery > img {
+    width: 0;
+    height: 0;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    filter: grayscale(80%);
+    transition: .35s linear;
+  }
+  
+  .gallery img:hover{
+    filter: grayscale(0);
+    width:  calc(100vh*var(--f)/var(--n));
+    height: calc(100vw*var(--f)/var(--m));
+  }
+  
+  /*** Paso a Paso End***/
+
+/*** Service Price Cards ***/
+
+.pricing-cards {
+    margin-top: -150px;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+  
+  .box-cards {
+    width: 1250px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card-header {
+    text-transform: uppercase;
+    letter-spacing: .15em;
+  }
+
+  .pkg-info {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: .1em;
+    line-height: 1.8em;
+  }
+  .amount {
+    text-align: center;
+    font-size: 1.7em;
+  }
+  .amount-bar {
+    background: var(--dark);
+  }
+  
+  hr {
+    width: 100px;
+    border: 2px solid #0078ff;
+    margin-bottom: 15px;
+  }
+  
+  .box-cards .card {
+        width: 1250px;
+        position: relative;
+        display: flex;
+        border: none;
+        /* justify-content: center; */
+        /* background-image: url('../img/kevlar.jpg'); */
+        /* background-repeat: no-repeat;   Evita la repetición de la imagen */
+        /* background-size: cover;        Asegura que la imagen cubra todo el contenedor */
+        /* background-position: center;   Centra la imagen */
+  }
+  
+  .box-cards .card .face {
+    width: 300px;
+    height: 200px;
+    transition: 1s;
+  }
+  
+  .box-cards .card .face.face1 {
+    position: relative;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #171717;
+    background-image: url("../img/kevlar.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+  
+  .box-cards .card:hover .face.face1 {
+    background: #fff;
+    transform: translateY(0);
+  }
+  
+  .box-cards .card .face.face1 .content h3 {
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+  }
+  
+  .box-cards .card:hover .face.face1 .content h3 {
+    color: var(--primary);
+    text-shadow:
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+    transition: 0.5s;
+  }
+  .box-cards .card:hover .face.face1 {
+    background-color: #ffffff;
+  background-image: url("#");
+    transition: 0.5s;
+  }
+  
+  .box-cards .card .face.face2 {
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    transform: translateY(-100px);
+  }
+  
+  .box-cards .card:hover .face.face2 {
+    transform: translateY(-15px);
+  }
+  
+  .box-cards .card .face.face2 .content p {
+    margin: 0;
+    padding: 0;
+  }
+/*** Service Price Cards End ***/
+
+/*** Booking ***/
+.booking {
+    background-repeat: repeat;
+    background-size: contain;
+    box-shadow: 
+        0px 10px 10px rgba(0, 0, 0, 0.75),  /* Sombra hacia abajo */
+        0px -10px 10px rgba(0, 0, 0, 0.75); /* Sombra hacia arriba */
+}
+
+.bootstrap-datetimepicker-widget.bottom {
+    top: auto !important;
+}
+
+.bootstrap-datetimepicker-widget .table * {
+    border-bottom-width: 0px;
+}
+
+.bootstrap-datetimepicker-widget .table th {
+    font-weight: 500;
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu {
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.bootstrap-datetimepicker-widget table td.active,
+.bootstrap-datetimepicker-widget table td.active:hover {
+    background: var(--primary);
+}
+
+.bootstrap-datetimepicker-widget table td.today::before {
+    border-bottom-color: var(--primary);
+}
+
+
+
+/*** Team ***/
+.team-item .team-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/img/fiber_carbon_dark_mesh.jpg");
+    background-size: cover;
+    background-position: center;
+    transform: scale(0);
+    transition: .5s;
+    
+}
+
+.team-item:hover .team-overlay {
+    transform: scale(1);
+}
+
+.team-item .team-overlay .btn {
+    color: var(--primary);
+    background: #FFFFFF;
+}
+
+.team-item .team-overlay .btn:hover {
+    color: #FFFFFF;
+    background: var(--secondary)
+}
+
+/*** Team End ***/
+
+/*** Testimonial ***/
+/* .testimonial-carousel .owl-item .testimonial-text,
+.testimonial-carousel .owl-item.center .testimonial-text * {
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-text {
+    background: var(--primary) !important;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-text * {
+    color: #FFFFFF !important;
+}
+
+.testimonial-carousel .owl-dots {
+    margin-top: 24px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.testimonial-carousel .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #CCCCCC;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-dot.active {
+    background: var(--primary);
+    border-color: var(--primary);
+} */
+/*** Testimonial End ***/
+
+/*** Footer ***/
+.footer {
+    background-repeat: repeat;
+    background-size: contain;
+    box-shadow: 0px -10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+.footer .btn.btn-social {
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light);
+    border: 1px solid #FFFFFF;
+    border-radius: 35px;
+    transition: .3s;
+}
+
+.footer .btn.btn-social:hover {
+    color: var(--primary);
+}
+
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+.footer .copyright {
+    padding: 25px 0;
+    font-size: 15px;
+    border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+.footer .copyright a {
+    color: var(--light);
+}
+
+.footer .footer-menu a {
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid rgba(255, 255, 255, .3);
+}
+
+.footer .footer-menu a:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+}
+
+.back-to-top {
+            position: fixed;
+            left: 50%;
+            bottom: 20px;
+            transform: translateX(-50%);
+            z-index: 1000;
+        }

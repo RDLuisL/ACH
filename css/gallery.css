@@ -1,0 +1,39 @@
+.container-fluid.service {
+    background-color: #f8f9fa;
+    padding: 5rem 0;
+}
+
+.text-center.mx-auto.pb-5 {
+    max-width: 800px;
+}
+
+.flag-icon {
+    width: 40px;
+    margin-right: 10px;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#gallery figure {
+    margin: 10px;
+    text-align: center;
+    flex-basis: calc(20% - 20px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+#gallery figcaption {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+}

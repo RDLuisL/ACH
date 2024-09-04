@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>Auto Care Hub - Brillando en cada detalle</title>
+    <title>Lavado y Detailing - Auto Carehub</title>
     <link rel="icon" href="img/ACH-ICO.ico" type="image/x-icon">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
 
     <!-- Tempusdominus para acomodar el calendario -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/css/tempusdominus-bootstrap-4.min.css" />
-    
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/css/tempusdominus-bootstrap-4.min.css" />
+
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -34,12 +34,14 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style_service.css" rel="stylesheet">
+    <link href="css/modal_prices.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only">Loading...</span>
         </div>
@@ -47,28 +49,32 @@
     <!-- Spinner End -->
 
     <!-- Topbar Start -->
-    <div class="container-fluid d-none bg-light p-0" style="height: 50px;">
+    <div class="container-fluid bg-light p-0" style="height: 50px;">
         <div class="row gx-0 d-none d-lg-flex">
             <div class="col-lg-7 px-5 text-start">
-                <div class="h-100 d-inline-flex align-items-center py-0 me-4">
-                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
-                    <small>Las Golondrinas 3761, Macul. Santiago - Chile</small>
-                </div>
                 <div class="h-100 d-inline-flex align-items-center py-0">
-                    <small class="far fa-clock text-primary me-2"></small>
-                    <small>Lun - Vie : 08.00 AM - 08.00 PM, Sáb : 08.00 AM - 02.00 PM</small>
+                    <img src="../img/reloj.png" style="width: 20px; #303E74">
+                    <small class="ps-2">Lun - Vie : 09:00 - 19:00, Sáb : 09:00 AM - 14:00</small>
                 </div>
             </div>
             <div class="col-lg-5 px-5 text-end">
                 <div class="h-100 d-inline-flex align-items-center py-0 me-4">
-                    <small class="fa fa-phone-alt text-primary me-2"></small>
-                    <small>+56 9 8687 0079</small>
+                    <a href="https://wa.me/+56986870079" style="color: #303E74" target="_blank">
+                        <img src="../img/telefono_icono.png" style="width: 20px">
+                        +56 9 8687 0079
+                    </a>
+
                 </div>
                 <div class="h-100 d-inline-flex align-items-center">
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/autocarehub.cl?igsh=MWRtdm5iNWp0ZHptcw==" target="_blank">
+                        <img src="../img/instagram_icono.png" style="width: 20px" class="m-2" />
+                    </a>
+                    <a href="">
+                        <img src="../img/facebook_icono.png" style="width: 20px" class="m-2" />
+                    </a>
+                    <a href="">
+                        <img src="../img/linkedin.png" style="width: 20px" class="m-2" />
+                    </a>
                 </div>
             </div>
         </div>
@@ -80,7 +86,8 @@
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <h2 class="m-0 text-primary" style="color: #303E74 !important">
                 <img class="logo-navbar" src="img/ACH_logo.png">
-                Auto Care Hub</h2>
+                Auto Carehub
+            </h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -89,59 +96,82 @@
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.html" class="nav-item nav-link active">Inicio</a>
                 <a href="about.html" class="nav-item nav-link">Acerca de Nosotros</a>
-                <a href="contact.html" class="nav-item nav-link">Contactanos</a>
+                <a href="contact.html" class="nav-item nav-link">Contáctanos</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Servicios</a>
                     <div class="dropdown-menu fade-up m-0">
-                        <a href="documentation.html" class="dropdown-item">Gestión de Revisión Técnica y otra Documentación</a>
-                        <a href="mechanic.html" class="dropdown-item">Mecánica Ligera y Neumáticos</a>
-                        <a href="wash_detailing.html" class="dropdown-item">Lavado y Detailing de Vehiculos</a>
-                        <a href="oil_change.html" class="dropdown-item">Cambio de Aceite y Filtros</a>
-                        <a href="windscreen.html" class="dropdown-item">Reparación y Cambio de Parabrisas</a>
-                        <a href="tinted_seg_glass.html" class="dropdown-item">Papel Polarizado y de Seguridad</a>
-                        <a href="electrocar.html" class="dropdown-item">Electroauto y Sistemas de Seguridad</a>
-                        <a href="paint.html" class="dropdown-item">Latonería y Pintura</a>
+                        <a href="documentation.html#revision-tecnica" class="dropdown-item">Gestión de Revisión Técnica
+                            y otra
+                            Documentación</a>
+                        <a href="mechanic.html#mecanica" class="dropdown-item">Mecánica Ligera</a>
+                        <a href="wash_detailing.html#wash" class="dropdown-item">Lavado Ecológico de Autos y Detailing a
+                            Domicilio</a>
+                        <a href="mechanic.html#aceite" class="dropdown-item">Cambio de Aceite y Filtros</a>
+                        <a href="electrocar.html#parabrisa" class="dropdown-item">Reparación y Cambio de Parabrisas</a>
+                        <a href="electrocar.html#paperglass" class="dropdown-item">Papel Polarizado y de Seguridad</a>
+                        <a href="electrocar.html#currentcut" class="dropdown-item">Electroauto y Sistemas de
+                            Seguridad</a>
+                        <a href="wash_detailing.html#painting" class="dropdown-item">Latonería y Pintura</a>
                     </div>
                 </div>
+                <a href="faqs.html" class="nav-item nav-link">Preguntas Frecuentes</a>
             </div>
-            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Cotiza<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="sched-menu.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block"
+                style="border: none; background-color: #0B0686; color:#DDDC2A">
+                Agende Rápido<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->
 
     <!-- Carousel Start -->
-    <!-- First Slide-->
     <div class="container-fluid p-0 mb-5">
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
+                <!-- Eco Wash First Slide-->
                 <div class="carousel-item active">
-                    <img class="w-100" src="img/carousel-bg-1.jpg" alt="Image">
+                    <img class="w-100" src="img/waterless_wash_car.png" alt="Image">
                     <div class="carousel-caption d-flex align-items-center">
                         <div class="container">
                             <div class="row align-items-center justify-content-center justify-content-lg-start">
                                 <div class="col-10 col-lg-7 text-center text-lg-start">
-                                    <h6 class="text-white text-uppercase mb-3 animated slideInDown">// Brillando en cada detalle //</h6>
-                                    <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">Servicio Calificado de Mantención Vehicular</h1>
-                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInDown" style="border-radius: 5px; border: none ; background-color: #303E74 !important">Conozca más<i class="fa fa-arrow-right ms-3"></i></a>
+                                    <h6 class="text-white text-uppercase mb-3 animated slideInDown"><img
+                                            src="img/race_flag_icon_white.png"
+                                            style="width: 40px; margin-right: 10px;">Brillando en cada detalle<img
+                                            src="img/race_flag_icon_white.png" style="width: 40px; margin-left: 10px;">
+                                    </h6>
+                                    <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">Lavado Ecológico a
+                                        Domicilio: Profesional y Sustentable</h1>
+                                    <a href="wash_detailing.html#ecowash"
+                                        class="btn btn-primary py-3 px-5 animated slideInDown rounded-pill"
+                                        style="border: none ; color: #DDDC2A ; background-color: #303E74 !important">Conozca
+                                        más<i class="fa fa-arrow-right ms-3"></i></a>
                                 </div>
                                 <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
-                                    <img class="img-fluid" src="img/carousel-1.png" alt="">
+                                    <img class="img-fluid" src="img/spray_600x500.png" alt="">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- First Slide End-->
-                <!-- Second Slide-->
+                <!-- Eco Wash First Slide End-->
+                <!-- Detailing Slide-->
                 <div class="carousel-item">
-                    <img class="w-100" src="img/carousel-bg-2.jpg" alt="Image">
+                    <img class="w-100" src="img/lavado_detalling_1920x1080.jpg" alt="Image">
                     <div class="carousel-caption d-flex align-items-center">
                         <div class="container">
                             <div class="row align-items-center justify-content-center justify-content-lg-start">
                                 <div class="col-10 col-lg-7 text-center text-lg-start">
-                                    <h6 class="text-white text-uppercase mb-3 animated slideInDown">// Brillando en cada detalle //</h6>
-                                    <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">Lavado y Detailing de Autos Calificado</h1>
-                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInDown" style="border-radius: 5px; border: none ; background-color: #303E74 !important">Conozca más<i class="fa fa-arrow-right ms-3"></i></a>
+                                    <h6 class="text-white text-uppercase mb-3 animated slideInDown"><img
+                                            src="img/race_flag_icon_white.png"
+                                            style="width: 40px; margin-right: 10px;">Brillando en cada detalle<img
+                                            src="img/race_flag_icon_white.png" style="width: 40px; margin-left: 10px;">
+                                    </h6>
+                                    <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">Detailing:
+                                        Perfección que Deja Tu Vehículo como Nuevo</h1>
+                                    <a href="wash_detailing.html#detailing"
+                                        class="btn btn-primary py-3 px-5 animated slideInDown rounded-pill"
+                                        style="border: none ; color: #DDDC2A ; background-color: #303E74 !important">Conozca
+                                        más<i class="fa fa-arrow-right ms-3"></i></a>
                                 </div>
                                 <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
                                     <img class="img-fluid" src="img/carousel-2.png" alt="">
@@ -151,19 +181,27 @@
                     </div>
                 </div>
                 <!-- Second Slide End-->
-                <!-- Third Slide-->
+                <!-- Paint Slide-->
                 <div class="carousel-item">
-                    <img class="w-100" src="img/documentos-auto-1200x400.png" alt="Image">
+                    <img class="w-100" src="img/latoneria_pintura_1920x1080.jpg" alt="Image">
                     <div class="carousel-caption d-flex align-items-center">
                         <div class="container">
                             <div class="row align-items-center justify-content-center justify-content-lg-start">
                                 <div class="col-10 col-lg-7 text-center text-lg-start">
-                                    <h6 class="text-white text-uppercase mb-3 animated slideInDown">// Brillando en cada detalle //</h6>
-                                    <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">Gestión Documentación Vehicular</h1>
-                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInDown" style="border-radius: 5px; border: none ; background-color: #303E74 !important">Conozca más<i class="fa fa-arrow-right ms-3"></i></a>
+                                    <h6 class="text-white text-uppercase mb-3 animated slideInDown"><img
+                                            src="img/race_flag_icon_white.png"
+                                            style="width: 40px; margin-right: 10px;">Brillando en cada detalle<img
+                                            src="img/race_flag_icon_white.png" style="width: 40px; margin-left: 10px;">
+                                    </h6>
+                                    <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">Latonería y Pintura:
+                                        Renueva la Belleza de tu Vehículo</h1>
+                                    <a href="wash_detailing.html#painting"
+                                        class="btn btn-primary py-3 px-5 animated slideInDown rounded-pill"
+                                        style="border: none ; color: #DDDC2A ; background-color: #303E74 !important">Conozca
+                                        más<i class="fa fa-arrow-right ms-3"></i></a>
                                 </div>
                                 <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
-                                    <img class="img-fluid" src="img/mazda_front.png" alt="">
+                                    <img class="img-fluid" src="img/mustang_iso600x500.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -171,13 +209,11 @@
                 </div>
                 <!-- Third Slide End-->
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -185,28 +221,383 @@
     </div>
     <!-- Carousel End -->
 
+    <!-- Services Start -->
+    <div class="container-fluid service bg-light py-5">
+        <div class="container py-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                <p class="text-uppercase text-secondary fs-5 mb-0"><img src="img/race_flag_icon.png"
+                        style="width: 40px;">Brillando en cada detalle <img src="img/race_flag_icon.png"
+                        style="width: 40px;"></p>
+                <h2 class="display-4 text-capitalize mb-3" id="wash">Limpieza, Pulitura y Detailing</h2>
+                <h5>Cuida y realza cada detalle de tu vehículo con nuestros servicios de limpieza, pulitura y detailing.
+                    Ofrecemos conveniencia y calidad profesional en cada visita, garantizando satisfacción y un acabado
+                    impecable, ya sea en tu trabajo o en casa.</h5>
+            </div>
+            <div class="row g-4">
+                <!-- Eco Wash at Home First Card -->
+                <div class="col-lg-4 wow fadeInUp" id="revision-tecnica" data-wow-delay="0.2s">
+                    <div class="service-item">
+                        <div class="service-img">
+                            <img src="img/car_wash_500x600.png" class="img-fluid w-100" alt="Image"
+                                style="border-radius: 20px;" id="ecowash">
+                        </div>
+                        <div class="service-content text-center p-4">
+
+                            <!-- Modal Prices -->
+                            <div class="modal-frame">
+                                <div class="modal">
+                                    <div class="modal-inset">
+                                        <button class="close-btn">×</button>
+                                        <div class="modal-body">
+                                            <img src="img/eco_washcar_icon.png"
+                                                style="width: 80px; margin-bottom: 20px;">
+                                            <ul>
+                                                <li style="text-align: justify;">Motocicletas: $10.990</li>
+                                                <li style="text-align: justify;">City Car, Sedan, SUV: $14.990</li>
+                                                <li style="text-align: justify;">Camioneta, Pickup, Doble Cabina:
+                                                    $17.990</li>
+                                            </ul>
+                                            <a href="faqs.html#lavado" style="color: #303E74">Preguntas Frecuentes</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-overlay"></div>
+                            <button class="fancy-btn open rounded-pill"
+                                style="border: none ; background-color: #303E74; color: #DDDC2A  !important">Precios</button>
+                            <!-- Modal Prices END-->
+
+                            <h4 class="d-block fs-4 text-white">
+                                Lavado Ecológico a domicilio
+                            </h4>
+                            <ul class="text-white mb-4">
+                                 <li style="text-align: justify;">"Nuestro lavado ecológico cuida tu vehículo y el planeta, ¡sin necesidad de agua!"
+                                </li>
+                                 <li style="text-align: justify;">
+                                    Nuestro equipo altamente capacitado llegará al lugar que elijas, ya sea en tu hogar,
+                                    oficina, o cualquier otro sitio que prefieras, asegurando un cuidado minucioso de tu
+                                    automóvil.
+                                </li>
+                                 <li style="text-align: justify;">
+                                    La limpieza interior, crea un ambiente impecable por dentro. Eliminamos polvo y
+                                    residuos, dejando un interior fresco y limpio.
+                                </li>
+                            </ul>
+                            <a class="btn btn-secondary py-2 px-4 rounded-pill" href="sched-ecowash.html"
+                                target="_blank"
+                                style="border: none; background-color: #303E74; color: #DDDC2A !important;">
+                                Agende aquí<img src="img/calendly_icon_white.png"
+                                    style="width: 25px; margin-left: 10px;">
+                            </a>
+                        </div>
+                        <div class="service-tytle">
+                            <div class="d-flex align-items-center ps-4 w-100 bg-slide-serv-card">
+                                <h4>Prácticidad y Ecológico donde tu lo deseas</h4>
+                            </div>
+                            <div class="btn-xl-square bg-secondary p-4" style="width: 80px; height: 80px;">
+                                <img src="img/eco_washcar_icon_white.png"
+                                    style="width: 60px; margin: -13px 0  0 -14px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Eco Wash at Home First Card End -->
+
+                <!-- Full Wash Second Card -->
+                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s" id="fullwash">
+                    <div class="service-item">
+                        <div class="service-img">
+                            <img src="img/full_wash.jpg" class="img-fluid w-100" alt="Image"
+                                style="border-radius: 20px;">
+                        </div>
+                        <div class="service-content text-center p-4">
+
+
+                            <!-- Modal Prices -->
+                            <div class="modal-frame">
+                                <div class="modal">
+                                    <div class="modal-inset">
+                                        <button class="close-btn">×</button>
+                                        <div class="modal-body">
+                                            <img src="img/full_wash.png" style="width: 80px; margin-bottom: 20px;">
+                                            <ul>
+                                                <li style="text-align: justify;">Motocicletas: 10.990</li>
+                                                <li style="text-align: justify;">City Car, Sedan, SUV: $14.990</li>
+                                                <li style="text-align: justify;">Camioneta, Pickup, Doble Cabina:
+                                                    $17.990</li>
+                                            </ul>
+                                            <a href="faqs.html#lavado" style="color: #303E74">Preguntas Frecuentes</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-overlay"></div>
+                            <button class="fancy-btn open rounded-pill"
+                                style="border: none ; background-color: #303E74; color: #DDDC2A  !important">Precios</button>
+                            <!-- Modal Prices END-->
+
+                            <h3 class="d-block fs-3 text-white">
+                                Lavado Full
+                            </h3>
+                            <ul class="text-white mb-2">
+                                 <li style="text-align: justify;">
+                                    Nuestro equipo altamente capacitado llegará al lugar que elijas, ya sea en tu hogar,
+                                    oficina, retiramos tu vehículo y lo llevamos a nuestras instalaciones asegurando un
+                                    cuidado minucioso de tu automóvil.
+                                </li>
+                                 <li style="text-align: justify;">
+                                    Cuidamos cada detalle exterior o interior, eliminamos polvo y residuos, dejando un
+                                    interior
+                                    fresco y limpio, y un exterior impecable.
+                                </li>
+                            </ul>
+                            <a class="btn btn-secondary py-2 px-4 rounded-pill" href="sched-full-wash.html"
+                                target="_blank"
+                                style="border: none; background-color: #303E74; color: #DDDC2A !important;">
+                                Agende aquí<img src="img/calendly_icon_white.png"
+                                    style="width: 25px; margin-left: 10px;">
+                            </a>
+                        </div>
+                        <div class="service-tytle">
+                            <div class="d-flex align-items-center justify-content-start ps-4 w-100">
+                                <h4>Comodidad y Excelencia</h4>
+                            </div>
+                            <div class="btn-xl-square bg-secondary p-4" style="width: 80px; height: 80px;">
+                                <img src="img/full_wash_white.png" style="width: 60px; margin: -13px 0  0 -14px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Full Wash Second Card End -->
+
+                <!-- Detailing Third Card -->
+                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.6s" id="detailing">
+                    <div class="service-item">
+                        <div class="service-img">
+                            <img src="img/detailing_before_after.png" class="img-fluid w-100" alt="Image"
+                                style="border-radius: 20px;" id="detailing">
+                        </div>
+                        <div class="service-content text-center p-2">
+
+                            <!-- Modal Prices -->
+                            <div class="modal-frame">
+                                <div class="modal">
+                                    <div class="modal-inset">
+                                        <button class="close-btn">×</button>
+                                        <div class="modal-body">
+                                            <img src="img/detailing_icon.png" style="width: 80px; margin-bottom: 20px;">
+                                            <ul>
+                                                <li style="text-align: justify;">Motocicletas: 10.990CLP</li>
+                                                <li style="text-align: justify;">City Car, Sedan, SUV: $14.990CLP</li>
+                                                <li style="text-align: justify;">Camioneta, Pickup, Doble Cabina:
+                                                    $17.990CLP</li>
+                                            </ul>
+                                            <a href="faqs.html#detailing" style="color: #303E74">Preguntas
+                                                Frecuentes</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-overlay"></div>
+                            <button class="fancy-btn open rounded-pill"
+                                style="border: none ; background-color: #303E74; color: #DDDC2A  !important">Precios</button>
+                            <!-- Modal Prices END-->
+
+                            <h3 class="d-block fs-3  text-white">
+                                Detailing
+                            </h3>
+                            <ul class="text-white mb-4">
+                                 <li style="text-align: justify;">
+                                    Está diseñado para ofrecer una atención minuciosa y profesional que renueva y realza
+                                    cada aspecto de tu automóvil. Utilizamos técnicas avanzadas y productos de alta
+                                    calidad para garantizar resultados excepcionales y una experiencia de conducción
+                                    renovada.
+                                 <li style="text-align: justify;">
+                                    Lavado exterior completo, limpieza de tapiceria y aspirado profundo.
+                                </li>
+                                 <li style="text-align: justify;">
+                                    Hidratación de cueros, vinilos y plásticos con protección UV
+                                </li>
+                            </ul>
+                            <a class="btn btn-secondary py-2 px-4 rounded-pill" href="sched-ecowash.html"
+                                target="_blank"
+                                style="border: none; background-color: #303E74; color: #DDDC2A !important;">
+                                Agende aquí<img src="img/calendly_icon_white.png"
+                                    style="width: 25px; margin-left: 10px;">
+                            </a>
+                        </div>
+                        <div class="service-tytle">
+                            <div class="d-flex align-items-center justify-content-start ps-4 w-100">
+                                <h4>Perfección para tu Vehículo</h4>
+                            </div>
+                            <div class="btn-xl-square bg-secondary p-4" style="width: 80px; height: 80px;">
+                                <img src="img/detailing_icon_white.png" style="width: 50px; margin: -10px 0  0 -8px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Detailing Third Card End -->
+
+                <!-- Polishing Fourth Card -->
+                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.7s" id="polishing">
+                    <div class="service-item">
+                        <div class="service-img">
+                            <img src="img/polish.png" class="img-fluid w-100" alt="Image" style="border-radius: 20px;">
+                        </div>
+                        <div class="service-content text-center p-2">
+
+                            <!-- Modal Prices -->
+                            <div class="modal-frame">
+                                <div class="modal">
+                                    <div class="modal-inset">
+                                        <button class="close-btn">×</button>
+                                        <div class="modal-body">
+                                            <img src="img/shine_car.png" style="width: 80px; margin-bottom: 20px;">
+                                            <ul>
+                                                <li style="text-align: justify;">Motocicletas: 10.990</li>
+                                                <li style="text-align: justify;">City Car, Sedan, SUV: $14.990</li>
+                                                <li style="text-align: justify;">Camioneta, Pickup, Doble Cabina:
+                                                    $17.990</li>
+                                            </ul>
+                                            <a href="faqs.html#polishing" style="color: #303E74">Preguntas
+                                                Frecuentes</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-overlay"></div>
+                            <button class="fancy-btn open rounded-pill"
+                                style="border: none ; background-color: #303E74; color: #DDDC2A  !important">Precios</button>
+                            <!-- Modal Prices END-->
+
+                            <h3 class="d-block fs-3 text-white">
+                                Lavado y Pulido
+                            </h3>
+                            <ul class="text-white mb-4">
+                                 <li style="text-align: justify;">
+                                    Restaurar la elegancia original de tu automóvil, eliminando imperfecciones y
+                                    realzando su belleza.
+                                 <li style="text-align: justify;">
+                                    Técnicas profesionales y productos de alta calidad, aseguramos un acabado impecable
+                                    y duradero
+                                </li>
+                                 <li style="text-align: justify;">
+                                    Sellado de Carrocería con Cera Acrílica (Duración de 6 Meses)
+                                </li>
+                                 <li style="text-align: justify;">
+                                    Este servicio incluye el servicio de Full Lavado.
+                                </li>
+                            </ul>
+                            <a class="btn btn-secondary py-2 px-4 rounded-pill" href="sched-ecowash.html"
+                                target="_blank"
+                                style="border: none; background-color: #303E74; color: #DDDC2A !important;">
+                                Agende aquí<img src="img/calendly_icon_white.png"
+                                    style="width: 25px; margin-left: 10px;">
+                            </a>
+                        </div>
+                        <div class="service-tytle">
+                            <div class="d-flex align-items-center justify-content-start ps-4 w-100">
+                                <h4>Renueva el Brillo y la Protección</h4>
+                            </div>
+                            <div class="btn-xl-square bg-secondary p-4" style="width: 80px; height: 80px;">
+                                <img src="img/shine_car_white.png" style="width: 50px; margin: -14px 0  0 -9px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Polishing Fourth Card End -->
+
+                <!-- Paint Fifth Card -->
+                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.9s" id="painting">
+                    <div class="service-item">
+                        <div class="service-img">
+                            <img src="img/paint_car_500x600.png" class="img-fluid w-100" alt="Image"
+                                style="border-radius: 20px;">
+                        </div>
+                        <div class="service-content text-center p-2">
+
+                            <h3 class="d-block fs-3 my-4 text-white">
+                                Latonería y Pintura
+                            </h3>
+                            <ul class="text-white mb-4">
+                                 <li style="text-align: justify;">
+                                    Eliminamos abolladuras y deformaciones, devolviendo a la carrocería su forma
+                                    original.
+                                </li>
+                                 <li style="text-align: justify;">
+                                    Sustituimos paneles gravemente dañados, manteniendo la coherencia estética y
+                                    estructural de tu vehículo.
+                                </li>
+                                 <li style="text-align: justify;">
+                                    Nos aseguramos de que todas las piezas de la carrocería estén correctamente
+                                    alineadas y ajustadas
+                                </li>
+                                 <li style="text-align: justify;">
+                                    Confía en nuestro equipo de expertos para restaurar la apariencia y funcionalidad de
+                                    tu vehículo
+                                </li>
+                                <li style="list-style-type: none; margin-top: 5px;">
+                                    <a href="faqs.html#lavado" style="color: white; font-weight: 900;">Preguntas
+                                        Frecuentes</a>
+                                </li>
+                            </ul>
+
+                            <a class="btn btn-secondary py-2 px-4 rounded-pill" href="javascript:void(0);"
+                                onclick="openWhatsApp('paint')" target="_blank"
+                                style="border: none; background-color: #303E74; color: #DDDC2A !important;">
+                                Contáctenos <img src="img/whastapp_icon_white.png"
+                                    style="width: 25px; margin-left: 10px;">
+                            </a>
+                        </div>
+                        <div class="service-tytle">
+                            <div class="d-flex align-items-center justify-content-start ps-4 w-100">
+                                <h4>Latonería y Pintura</h4>
+                            </div>
+                            <div class="btn-xl-square bg-secondary p-4" style="width: 80px; height: 80px;">
+                                <img src="img/paint_icon_white.png" style="width: 55px; margin: -10px 0  0 -10px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Paint Fifth Card End -->
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+    |
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="1s"
+        style="background-image: url('img/fiber_carbon_dark_mesh.jpg')">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Dirección</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Las Golondrinas 3761, Macul. Santiago</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+56 9 8687 0079</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>autocarhub.cl@gmail.com</p>
+                    <h4 class="text-light mb-4" style="filter: brightness(100%) !important">Contáctenos</h4>
+                    <a href="https://wa.me/+56986870079" style="color: white" target="_blank">
+                        <img src="../img/telefono_icono_white.png" style="width: 30px">
+                        +56 9 8687 0079
+                    </a>
+
                     <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/autocarehub.cl?utm_source=qr&igsh=MWRtdm5iNWp0ZHptcw=="
+                            target="_blank">
+                            <img src="../img/instagram_icono_instagram.png" style="width: 30px" class="m-2">
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61560143995190&mibextid=qi2Omg&rdid=0H1kJeNwoNnGrXQM&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fuj5uJAAYepF8pFNm%2F%3Fmibextid%3Dqi2Omg"
+                            target="_blank">
+                            <img src="../img/facebook_icono_white.png" style="width: 30px" class="m-2">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="../img/linkedin_logo_white.png" style="width: 30px" class="m-2">
+                        </a>
                     </div>
                 </div>
+
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Horarios</h4>
                     <h6 class="text-light">Lunes - Viernes:</h6>
-                    <p class="mb-4">08.00 AM - 08.00 PM</p>
+                    <p class="mb-4">09:00 - 19:00</p>
                     <h6 class="text-light">Sábado:</h6>
-                    <p class="mb-0">09.00 AM - 2.00 PM</p>
+                    <p class="mb-0">09:00 - 14:00</p>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Servicios</h4>
@@ -217,32 +608,29 @@
                     <a class="btn btn-link" href="">Papel Polarizado y Seguridad</a>
                     <a class="btn btn-link" href="">Electroauto y Sistema de Seguridad</a>
                 </div>
-                <!-- Newsletter -->
-                <!-- <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Newsletter</h4>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                    <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
-                </div> -->
-                <!-- Newsletter End -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Políticas</h4>
+                    <a class="btn btn-link" href="term_and_cond.html">Términos y Condiciones</a>
+                    <a class="btn btn-link" href="privacity.html">De Privacidad</a>
+                </div>
             </div>
         </div>
+
         <div class="container">
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">www.autocarhub.cl</a>, Todos los derechos reservados@2024.
-
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Diseñado por <a class="border-bottom" href="https://htmlcodex.com">Luis Luna</a>
+                        &copy; <a class="border-bottom" href="#">www.autocarhub.cl</a>, Todos los derechos
+                        reservados@2024.
+                        by <a class="border-bottom" href="https://github.com/RDLuisL" target="_blank"
+                            style="text-decoration: none !important;"> <img src="img/lluna_sign_white.png" alt="RDLuisL"
+                                style="height: 50px; text-decoration: none !important;"> </a>
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">
                             <a href="">Inicio</a>
                             <a href="">Cookies</a>
-                            <a href="">Preguntas Frecuentes</a>
+                            <a href="faqs.html">Preguntas Frecuentes</a>
                         </div>
                     </div>
                 </div>
@@ -253,8 +641,27 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
+    <a href="#" id="backToTop" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+        style="border: none; border-radius: 5px; background-color: #DDDC2A; color: #303E74;">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+    <!-- Back to Top End -->
+    <!-- Backtop script -->
+    <script>
+        document.getElementById("backToTop").addEventListener("click", function (event) {
+            event.preventDefault(); // Evita que el enlace siga el comportamiento predeterminado
+            window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplazamiento suave hacia arriba
+        });
+    </script>
+    <!-- Backtop script End -->
+    <!-- Backtop script -->
+    <script>
+        document.getElementById("backToTop").addEventListener("click", function (event) {
+            event.preventDefault(); // Evita que el enlace siga el comportamiento predeterminado
+            window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplazamiento suave hacia arriba
+        });
+    </script>
+    <!-- Backtop script End -->
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -267,11 +674,14 @@
     <script src="lib/tempusdominus/js/moment.min.js"></script>
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="lib/modal_prices.js"></script>
+    <script src="lib/whatsapp2.js"></script>
 
     <!-- Script to Setup Calendar to DD/MM/YY -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/js/tempusdominus-bootstrap-4.min.js"></script>
     <script>
         $(function () {
             $('#date1').datetimepicker({

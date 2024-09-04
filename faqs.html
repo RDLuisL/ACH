@@ -3,23 +3,23 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Auto Care Hub - Brillando en cada detalle</title>
+    <title>Preguntas - Brillando en cada detalle</title>
     <link rel="icon" href="img/ACH-ICO.ico" type="image/x-icon">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
 
     <!-- Tempusdominus para acomodar el calendario -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/css/tempusdominus-bootstrap-4.min.css" />
-    
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/css/tempusdominus-bootstrap-4.min.css" />
+
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -40,7 +40,8 @@
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only">Loading...</span>
         </div>
@@ -48,28 +49,32 @@
     <!-- Spinner End -->
 
     <!-- Topbar Start -->
-    <div class="container-fluid bg-light d-none p-0" style="height: 50px;">
+    <div class="container-fluid bg-light p-0" style="height: 50px;">
         <div class="row gx-0 d-none d-lg-flex">
             <div class="col-lg-7 px-5 text-start">
-                <div class="h-100 d-inline-flex align-items-center py-0 me-4">
-                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
-                    <small>Las Golondrinas 3761, Macul. Santiago - Chile</small>
-                </div>
                 <div class="h-100 d-inline-flex align-items-center py-0">
-                    <small class="far fa-clock text-primary me-2"></small>
-                    <small>Lun - Vie : 08.00 AM - 08.00 PM, Sáb : 08.00 AM - 02.00 PM</small>
+                    <img src="../img/reloj.png" style="width: 20px; #303E74">
+                    <small class="ps-2">Lun - Vie : 09:00 - 19:00, Sáb : 09:00 AM - 14:00</small>
                 </div>
             </div>
             <div class="col-lg-5 px-5 text-end">
                 <div class="h-100 d-inline-flex align-items-center py-0 me-4">
-                    <small class="fa fa-phone-alt text-primary me-2"></small>
-                    <small>+56 9 8687 0079</small>
+                    <a href="https://wa.me/+56986870079" style="color: #303E74" target="_blank">
+                        <img src="../img/telefono_icono.png" style="width: 20px">
+                        +56 9 8687 0079
+                    </a>
+
                 </div>
                 <div class="h-100 d-inline-flex align-items-center">
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/autocarehub.cl?igsh=MWRtdm5iNWp0ZHptcw==" target="_blank">
+                        <img src="../img/instagram_icono.png" style="width: 20px" class="m-2" />
+                    </a>
+                    <a href="">
+                        <img src="../img/facebook_icono.png" style="width: 20px" class="m-2" />
+                    </a>
+                    <a href="">
+                        <img src="../img/linkedin.png" style="width: 20px" class="m-2" />
+                    </a>
                 </div>
             </div>
         </div>
@@ -81,7 +86,8 @@
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <h2 class="m-0 text-primary" style="color: #303E74 !important">
                 <img class="logo-navbar" src="img/ACH_logo.png">
-                Auto Care Hub</h2>
+                Auto Carehub
+            </h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -89,213 +95,561 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.html" class="nav-item nav-link active">Inicio</a>
-                <a href="about.html" class="nav-item nav-link">Acerca de Nosotros</a>
-                <a href="contact.html" class="nav-item nav-link">Contactanos</a>
+                <a href="gallery.html" class="nav-item nav-link">Galeria</a>
+                <a href="about.html" class="nav-item nav-link">Nosotros</a>
+                <a href="contact.html" class="nav-item nav-link">Contáctanos</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Servicios</a>
                     <div class="dropdown-menu fade-up m-0">
-                        <a href="documentation.html" class="dropdown-item">Gestión de Revisión Técnica y otra Documentación</a>
-                        <a href="mechanic.html" class="dropdown-item">Mecánica Ligera y Neumáticos</a>
-                        <a href="wash_detailing.html" class="dropdown-item">Lavado y Detailing de Vehiculos</a>
-                        <a href="oil_change.html" class="dropdown-item">Cambio de Aceite y Filtros</a>
-                        <a href="windscreen.html" class="dropdown-item">Reparación y Cambio de Parabrisas</a>
-                        <a href="tinted_seg_glass.html" class="dropdown-item">Papel Polarizado y de Seguridad</a>
-                        <a href="electrocar.html" class="dropdown-item">Electroauto y Sistemas de Seguridad</a>
-                        <a href="paint.html" class="dropdown-item">Latonería y Pintura</a>
+                        <a href="documentation.html#revision-tecnica" class="dropdown-item">Gestión de Revisión Técnica
+                            y otra
+                            Documentación</a>
+                        <a href="mechanic.html" class="dropdown-item">Mecánica Ligera</a>
+                        <a href="wash_detailing.html#wash" class="dropdown-item">Lavado Ecológico de Autos y Detailing a
+                            Domicilio</a>
+                        <a href="mechanic.html#aceite" class="dropdown-item">Cambio de Aceite y Filtros</a>
+                        <a href="electrocar.html#parabrisa" class="dropdown-item">Reparación y Cambio de Parabrisas</a>
+                        <a href="electrocar.html#paperglass" class="dropdown-item">Papel Polarizado y de Seguridad</a>
+                        <a href="electrocar.html#currentcut" class="dropdown-item">Electroauto y Sistemas de
+                            Seguridad</a>
+                        <a href="wash_detailing.html#painting" class="dropdown-item">Latonería y Pintura</a>
+                        <a href="mechanic.html#lavado_engrase" class="dropdown-item">Lavado Motor, Chasis y Engrase</a>
                     </div>
                 </div>
             </div>
-            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Cotiza<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="sched-menu.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block"
+                style="border: none; background-color: #0B0686; color:#DDDC2A">
+                Agende Rápido<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->
 
     <!-- FAQs Body -->
-    <h1>Preguntas Frecuentes</h1>
-
+    <div class="container text-center">
+        <h1 class="display-3 mb-3 animated slideInDown" style="color: #303E74">Preguntas Frecuentes</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-center text-uppercase">
+                <li class="breadcrumb-item"><a style="color: #303E74;" href="faqs.html#generales">Generales</a></li>
+                <li class="breadcrumb-item"><a style="color: #303E74;" href="faqs.html#pagos">Pagos</a></li>
+                <li class="breadcrumb-item"><a style="color: #303E74;" href="faqs.html#lavado">Lavado</a></li>
+                <li class="breadcrumb-item"><a style="color: #303E74;" href="faqs.html#detailing">Detailing</a></li>
+                <li class="breadcrumb-item"><a style="color: #303E74;" href="faqs.html#mantencion">Mantención</a></li>
+            </ol>
+            <ol class="breadcrumb justify-content-center text-uppercase" style="margin-top: -12px;">
+                <li class="breadcrumb-item"><a style="color: #303E74;" href="faqs.html#lamina">Láminas de Seguridad</a>
+                </li>
+                <li class="breadcrumb-item"><a style="color: #303E74;" href="faqs.html#papel">Papel Ahumado</a></li>
+            </ol>
+        </nav>
+    </div>
     <div class="faqs-container">
-        <div class="faq active">
-            <h3 class="faq-title">
-                ¿Por qué los pájaros no usan Facebook?
+        <!-- 1th ACH Question -->
+        <div class="faq shadow">
+            <h3 class="faq-title" id="generales">
+                ¿Qué es Auto Carehub?
             </h3>
-            <p class="faq-text">
-                Porque ya tienen Twitter.
-            </p>
+            <h6 class="faq-text" style="text-align: justify;">
+                Auto Carehub es una empresa dedicada a brindar servicios automotrices integrales, abarcando todas las
+                labores relacionadas con el mantenimiento de vehículos. Su propuesta se centra en ofrecer a los clientes
+                servicios de alta calidad desde la comodidad de su hogar.
+            </h6>
             <button class="faq-toggle">
                 <i class="fas fa-chevron-down"></i>
                 <i class="fas fa-times"></i>
             </button>
         </div>
-        
-        <div class="faq">
+        <!-- 2th Alcance Question -->
+        <div class="faq shadow">
             <h3 class="faq-title">
-                ¿Qué le dice un jaguar a otro jaguar?
+                ¿Cuál es el alcance de su servicio?
             </h3>
-            <p class="faq-text">
-                ¡Jaguar you?
-            </p>
+            <h6 class="faq-text" style="text-align: justify;">
+                Actualmente, ofrecemos una cobertura completa en las comunas de Macul, Ñuñoa, y Providencia. Además,
+                brindamos servicio parcial en Las Condes, La Reina, Vitacura, Peñalolén, San Joaquín, y San Miguel. Para
+                otras zonas, le invitamos a contactarnos, ya que podría aplicarse un recargo adicional por el traslado
+                de nuestro personal.
+            </h6>
             <button class="faq-toggle">
                 <i class="fas fa-chevron-down"></i>
                 <i class="fas fa-times"></i>
             </button>
         </div>
-        
-        <div class="faq">
+        <!-- 3rd Agendar Question -->
+        <div class="faq shadow">
             <h3 class="faq-title">
-                ¿Qué hace una abeja en el gimnasio?
+                ¿Cómo se agenda un servicio?
             </h3>
-            <p class="faq-text">
-                ¡Zum-ba!
-            </p>
+            <h6 class="faq-text" style="text-align: justify;">
+                Agenda tu servicio en nuestra web o por WhatsApp, y te contactaremos de inmediato para coordinar.
+            </h6>
             <button class="faq-toggle">
                 <i class="fas fa-chevron-down"></i>
                 <i class="fas fa-times"></i>
             </button>
         </div>
-        
-        <div class="faq">
+        <!--4th Reagendar Question -->
+        <div class="faq shadow">
             <h3 class="faq-title">
-                ¿Cuál es el animal más antiguo?
+                ¿Es posible reagendar un servicio?
             </h3>
-            <p class="faq-text">
-                La cebra, porque está en blanco y negro.
-            </p>
+            <h6 class="faq-text" style="text-align: justify;">
+                Sí, puedes reagendar tu servicio sin penalización alguna siempre y cuando lo hagas con al menos 3 horas
+                de antelación a través de nuestro WhatsApp.
+            </h6>
             <button class="faq-toggle">
                 <i class="fas fa-chevron-down"></i>
                 <i class="fas fa-times"></i>
             </button>
         </div>
-        
-        <div class="faq">
+        <!-- 5th Cancelación Question -->
+        <div class="faq shadow">
             <h3 class="faq-title">
-                ¿Qué hace una vaca con los ojos cerrados?
+                ¿Cuál es la política de cancelación?
             </h3>
-            <p class="faq-text">
-                ¡Leche concentrada!
-            </p>
+            <h6 class="faq-text" style="text-align: justify;">
+                Cancelaciones con más de 3 horas de antelación recibirán un reembolso completo; con menos tiempo, se
+                retendrán $15.000. Consulta nuestros Términos y Condiciones para más detalles.
+            </h6>
+            <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <!-- 6th Reembolso Question -->
+        <div class="faq shadow">
+            <h3 class="faq-title">
+                ¿Cuánto tiempo tarda el proceso de reembolso?
+            </h3>
+            <h6 class="faq-text" style="text-align: justify;">
+                El reembolso se realiza en menos de 48 horas después de haber solicitado la cancelación.
+            </h6>
+            <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <!-- 7th Dónde Question -->
+        <div class="faq shadow">
+            <h3 class="faq-title">
+                ¿Dónde se llevan a cabo los servicios?
+            </h3>
+            <h6 class="faq-text" style="text-align: justify;">
+                El lugar de prestación del servicio se adapta a tus necesidades y preferencias. Ya sea en tu domicilio u
+                oficina. En caso de requerir traslado, se encargarán de recoger el vehículo donde indiques, llevarlo al
+                taller correspondiente y devolverlo posteriormente al lugar designado.
+            </h6>
+            <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <!-- 8th Pagos Question -->
+        <div class="faq shadow" id="pagos">
+            <h3 class="faq-title">
+                ¿Qué métodos de pago se aceptan?
+            </h3>
+            <h6 class="faq-text" style="text-align: justify;">
+                Se admiten pagos a través de Mercado Pago con tarjetas de débito, crédito, Onepay, prepago y
+                transferencia electrónica.
+            </h6>
+            <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <!-- 8th Condiciones Pagos Question -->
+        <div class="faq shadow">
+            <h3 class="faq-title">
+                ¿Cuáles son las condiciones de pago para los servicios?
+            </h3>
+            <h6 class="faq-text" style="text-align: justify;">
+                Para su comodidad, los servicios de agendamiento rápido requieren el pago al momento de realizar la
+                reserva. En el caso de servicios que incluyan la adquisición de repuestos, solicitamos el pago
+                anticipado del importe completo del repuesto, mientras que el saldo correspondiente al servicio se
+                abonará al momento de la entrega del vehículo. Así, aseguramos una gestión eficiente y transparente de
+                su servicio.
+            </h6>
+            <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <!-- 9th Garantía Question -->
+        <div class="faq shadow">
+            <h3 class="faq-title">
+                ¿Los servicios incluyen garantía?
+            </h3>
+            <h6 class="faq-text" style="text-align: justify;">
+                Todos los servicios cuentan con una garantía que puede extenderse hasta 12 meses o 10.000 km, según el
+                tipo de servicio, a partir de la fecha de realización.
+            </h6>
+            <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <!-- 10th Incidentes Question -->
+        <div class="faq shadow">
+            <h3 class="faq-title">
+                ¿Qué sucede en caso de algún incidente durante el servicio?
+            </h3>
+            <h6 class="faq-text" style="text-align: justify;">
+                Los servicios que incluyen traslado están respaldados por un seguro que cubre todo el trayecto, desde la
+                recogida hasta la entrega del vehículo.
+            </h6>
+            <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <!-- 11th Adicionales Question -->
+        <div class="faq shadow">
+            <h3 class="faq-title" id="lavado">
+                ¿Ofrecen servicios adicionales a los publicados en la plataforma?
+            </h3>
+            <h6 class="faq-text" style="text-align: justify;">
+                Auto Carehub ofrece servicios adicionales no listados. Contáctanos por WhatsApp para verificar
+                disponibilidad. Si un profesional sugiere un servicio diferente, coordínalo con nosotros para asegurar
+                la garantía.
+            </h6>
+            <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <!-- 12th Lavado al Seco Question -->
+        <div class="faq shadow">
+            <h3 class="faq-title">
+                ¿Cuál es el procedimiento para realizar el lavado en seco?
+            </h3>
+            <h6 class="faq-text" style="text-align: justify;">
+                Auto Carehub ha revolucionado la limpieza automotriz con su lavado en seco, un método ecológico que
+                ahorra hasta 100 litros de agua por lavado y garantiza resultados impecables.
+            </h6>
+            <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <!-- 13th Productos Question -->
+        <div class="faq shadow">
+            <h3 class="faq-title" id="lavado">
+                ¿Qué tipo de productos utilizan?
+            </h3>
+            <h6 class="faq-text" style="text-align: justify;">
+                Usamos productos ecológicos biodegradables que eliminan la suciedad sin agua, protegiendo la pintura y
+                conservando recursos. Nuestros expertos cuidan cada vehículo con paños de microfibra suaves para evitar
+                marcas.
+            </h6>
+            <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <!-- 14th Llaves Question -->
+        <div class="faq shadow">
+            <h3 class="faq-title" id="lavado">
+                ¿Es necesario entregar las llaves de mi auto?
+            </h3>
+            <h6 class="faq-text" style="text-align: justify;">
+                Priorizamos tu seguridad y comodidad. Para el Lavado Exterior, no requerimos las llaves del vehículo.
+                Sin embargo, para el LavadoFull, solicitamos las llaves para facilitar el acceso a todas las áreas, como
+                abrir maleteros eléctricos o bajar las ventanillas para una limpieza integral.
+            </h6>
+            <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <!-- 15th Presencia Question -->
+        <div class="faq shadow">
+            <h3 class="faq-title" id="lavado">
+                ¿Debo estar presente durante el lavado?
+            </h3>
+            <h6 class="faq-text" style="text-align: justify;">
+                Para un Lavado Full, puedes dejar las llaves con un tercero para que las entregue al personal encargado
+                y recogerlas al final del servicio. En el Lavado Exterior, tu presencia no es necesaria.
+            </h6>
+            <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <!-- 16th Lugar Question -->
+        <div class="faq shadow">
+            <h3 class="faq-title" id="lavado">
+                ¿Pueden realizar el lavado de auto en cualquier lugar?
+            </h3>
+            <h6 class="faq-text" style="text-align: justify;">
+                Lavaremos tu auto donde prefieras, siempre que el lugar sea tranquilo y adecuado para el servicio. Si
+                vives en un condominio, verifica que esté permitido. No realizamos lavados en la vía pública por
+                seguridad.
+            </h6>
+            <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <!-- 17th Electricidad o Agua Question -->
+        <div class="faq shadow">
+            <h3 class="faq-title" id="lavado">
+                ¿Es necesaria una conexión eléctrica para llevar a cabo los lavados?
+            </h3>
+            <h6 class="faq-text" style="text-align: justify;">
+                En Auto Carehub, nos encargamos de todo para ofrecerte una experiencia sin complicaciones. No requerimos
+                fuentes externas de electricidad ni agua para el lavado al seco, adaptándonos a tus necesidades para tu
+                comodidad.
+            </h6>
+            <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <!-- 18th Tiempo Question -->
+        <div class="faq shadow">
+            <h3 class="faq-title" id="lavado">
+                ¿Cuánto tiempo tarda el servicio de lavado?
+            </h3>
+            <h6 class="faq-text" style="text-align: justify;">
+                La duración del lavado depende del servicio, tamaño del vehículo y nivel de suciedad. El lavado exterior
+                toma cerca de una hora, y el completo entre una hora y media y dos horas.
+            </h6>
+            <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <!-- 19th Lodo Question -->
+        <div class="faq shadow">
+            <h3 class="faq-title papel" id="lavado">
+                ¿Es viable emplear el lavado en seco en vehículos con diferentes niveles de suciedad?
+            </h3>
+            <h6 class="faq-text" style="text-align: justify;">
+                Este método es ideal para suciedad urbana, pero no para vehículos con barro o suciedad incrustada, ya
+                que podría dañar la pintura o componentes delicados. Dado nuestro uso mínimo de agua, no lavamos
+                vehículos con lodo o suciedad extrema para garantizar resultados óptimos.
+            </h6>
+            <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <!-- 20th Manchas o Pelos de Mascotas Question -->
+        <div class="faq shadow">
+            <h3 class="faq-title papel" id="detailing">
+                ¿El servicio de detailing incluye la remoción de manchas difíciles y exceso de pelo de mascotas?
+            </h3>
+            <h6 class="faq-text" style="text-align: justify;">
+                Nuestro servicio de detailing no incluye la remoción de manchas difíciles como las de sangre, café,
+                grasa, entre otras, ya que estas requieren tratamientos específicos. Para ofrecer un desmanchado
+                efectivo, es necesario utilizar productos adecuados para cada tipo de mancha, lo que implicará un costo
+                adicional. Asimismo, si el vehículo presenta un exceso de pelo de mascotas, se aplicará un cargo
+                adicional de $5.000 pesos para garantizar una limpieza impecable.
+            </h6>
+            <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <!-- 21th Tiempo Mecánica Question -->
+        <div class="faq shadow">
+            <h3 class="faq-title papel" id="mantencion">
+                ¿Cuánto tiempo toma realizar los servicios de mecánica ligera?
+            </h3>
+            <h6 class="faq-text" style="text-align: justify;">
+                Los servicios de mecánica ligera suelen completarse en el transcurso de un solo día, e incluso en medio
+                día, dependiendo del tipo de vehículo y la complejidad del trabajo. Nos esforzamos en ofrecerle un
+                servicio eficiente sin comprometer la calidad, para que pueda volver a la carretera lo antes posible.
+            </h6>
+            <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <!-- 21th Repuestos Question -->
+        <div class="faq shadow">
+            <h3 class="faq-title papel">
+                ¿Cómo se manejan los repuestos en los servicios de mecánica ligera?
+            </h3>
+            <h6 class="faq-text" style="text-align: justify;">
+                Para servicios de mecánica ligera que requieran repuestos, nos comprometemos a presentar al cliente, lo
+                antes posible, varios presupuestos de piezas provenientes de casas de repuestos reconocidas. De este
+                modo, usted podrá elegir el repuesto que mejor se ajuste a sus necesidades y preferencias, asegurando
+                así una reparación que cumpla con sus expectativas en términos de calidad y costo.
+            </h6>
+            <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <!-- 21th nivel de Ahumado Question -->
+        <div class="faq shadow">
+            <h3 class="faq-title" id="papel">
+                ¿Cuál es el nivel estándar de transmisión de luz exigido para los cristales de los vehículos?
+            </h3>
+            <h6 class="faq-text" style="text-align: justify;">
+                El Decreto 22, o Ley de Polarizados, exige que los vidrios laterales delanteros de los vehículos tengan
+                una transmisión de luz de al menos el 70%, y los vidrios laterales traseros y la luneta trasera del 28%.
+                Carabineros de Chile y los Inspectores Fiscales y Municipales son responsables de asegurar el
+                cumplimiento de esta normativa.
+            </h6>
+            <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <!-- 22th Resistencia Question -->
+        <div class="faq shadow">
+            <h3 class="faq-title" id="lamina">
+                ¿Cuál es la resistencia de la lámina de seguridad ante impactos?
+            </h3>
+            <h6 class="faq-text" style="text-align: justify;">
+                Están diseñada para soportar múltiples impactos, como: piedras, martillazos, escombros, bujias y otros
+                objetos contundentes. El vidrio se quebrará bajo un golpe severo, pero lámina evitará que los fragmentos
+                no caigan sobre los ocupantes del vehículo, ni el ingreso al mismo por terceros. Es importante destacar
+                que, aunque altamente resistente, la lámina de seguridad no es un blindaje.
+            </h6>
             <button class="faq-toggle">
                 <i class="fas fa-chevron-down"></i>
                 <i class="fas fa-times"></i>
             </button>
         </div>
     </div>
-    
-    
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s"
+        style="background-image: url('img/fiber_carbon_dark_mesh.jpg')">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4" style="filter: brightness(100%) !important">Contáctenos</h4>
+                    <a href="https://wa.me/+56986870079" style="color: white" target="_blank">
+                        <img src="../img/telefono_icono_white.png" style="width: 30px">
+                        +56 9 8687 0079
+                    </a>
 
-  <!-- Footer Start -->
-  <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-    <div class="container py-5">
-        <div class="row g-5">
-            <div class="col-lg-3 col-md-6">
-                <h4 class="text-light mb-4">Dirección</h4>
-                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Las Golondrinas 3761, Macul. Santiago</p>
-                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+56 9 8687 0079</p>
-                <p class="mb-2"><i class="fa fa-envelope me-3"></i>autocarhub.cl@gmail.com</p>
-                <div class="d-flex pt-2">
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <div class="d-flex pt-2">
+                        <a href="https://www.instagram.com/autocarehub.cl?utm_source=qr&igsh=MWRtdm5iNWp0ZHptcw=="
+                            target="_blank">
+                            <img src="../img/instagram_icono_instagram.png" style="width: 30px" class="m-2">
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61560143995190&mibextid=qi2Omg&rdid=0H1kJeNwoNnGrXQM&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fuj5uJAAYepF8pFNm%2F%3Fmibextid%3Dqi2Omg"
+                            target="_blank">
+                            <img src="../img/facebook_icono_white.png" style="width: 30px" class="m-2">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="../img/linkedin_logo_white.png" style="width: 30px" class="m-2">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Horarios</h4>
+                    <h6 class="text-light">Lunes - Viernes:</h6>
+                    <h6 class="mb-4">09:00 - 19:00</h6>
+                    <h6 class="text-light">Sábado:</h6>
+                    <h6 class="mb-0">09:00 - 14:00</h6>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Servicios</h4>
+                    <a class="btn btn-link" href="">Gestión de Revisión Técnica y Documentación</a>
+                    <a class="btn btn-link" href="">Mecánica Ligera</a>
+                    <a class="btn btn-link" href="">Cambio de Aceite</a>
+                    <a class="btn btn-link" href="">Parabrisas</a>
+                    <a class="btn btn-link" href="">Papel Polarizado y Seguridad</a>
+                    <a class="btn btn-link" href="">Electroauto y Sistema de Seguridad</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Políticas</h4>
+                    <a class="btn btn-link" href="term_and_cond.html">Términos y Condiciones</a>
+                    <a class="btn btn-link" href="privacity.html">De Privacidad</a>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
-                <h4 class="text-light mb-4">Horarios</h4>
-                <h6 class="text-light">Lunes - Viernes:</h6>
-                <p class="mb-4">08.00 AM - 08.00 PM</p>
-                <h6 class="text-light">Sábado:</h6>
-                <p class="mb-0">09.00 AM - 2.00 PM</p>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <h4 class="text-light mb-4">Servicios</h4>
-                <a class="btn btn-link" href="">Gestión de Revisión Técnica y Documentación</a>
-                <a class="btn btn-link" href="">Mecánica Ligera</a>
-                <a class="btn btn-link" href="">Cambio de Aceite</a>
-                <a class="btn btn-link" href="">Parabrisas</a>
-                <a class="btn btn-link" href="">Papel Polarizado y Seguridad</a>
-                <a class="btn btn-link" href="">Electroauto y Sistema de Seguridad</a>
-            </div>
-            <!-- Newsletter -->
-            <!-- <div class="col-lg-3 col-md-6">
-                <h4 class="text-light mb-4">Newsletter</h4>
-                <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                <div class="position-relative mx-auto" style="max-width: 400px;">
-                    <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                    <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                </div>
-            </div> -->
-            <!-- Newsletter End -->
         </div>
-    </div>
-    <div class="container">
-        <div class="copyright">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="border-bottom" href="#">www.autocarhub.cl</a>, Todos los derechos reservados@2024.
 
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Diseñado por <a class="border-bottom" href="https://htmlcodex.com">Luis Luna</a>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <div class="footer-menu">
-                        <a href="">Inicio</a>
-                        <a href="">Cookies</a>
-                        <a href="">Preguntas Frecuentes</a>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">www.autocarhub.cl</a>, Todos los derechos
+                        reservados@2024.
+                        by <a class="border-bottom" href="https://github.com/RDLuisL" target="_blank"
+                            style="text-decoration: none !important;"> <img src="img/lluna_sign_white.png" alt="RDLuisL"
+                                style="height: 50px; text-decoration: none !important;"> </a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="">Inicio</a>
+                            <a href="">Cookies</a>
+                            <a href="faqs.html">Preguntas Frecuentes</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Footer End -->
+    <!-- Footer End -->
 
 
-<!-- Back to Top -->
-<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
-
-<!-- JavaScript Libraries -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="lib/wow/wow.min.js"></script>
-<script src="lib/easing/easing.min.js"></script>
-<script src="lib/waypoints/waypoints.min.js"></script>
-<script src="lib/counterup/counterup.min.js"></script>
-<script src="lib/owlcarousel/owl.carousel.min.js"></script>
-<script src="lib/tempusdominus/js/moment.min.js"></script>
-<script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-<script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-
-<!-- Script to Setup Calendar to DD/MM/YY -->
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/js/tempusdominus-bootstrap-4.min.js"></script>
-<script>
-    const toggles = document.querySelectorAll('.faq-toggle');
-
-    toggles.forEach(toggle => {
-        toggle.addEventListener('click', () => {
-            toggle.parentNode.classList.toggle('active');
+    <!-- Back to Top -->
+    <a href="#" id="backToTop" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+        style="border: none; border-radius: 5px; background-color: #DDDC2A; color: #303E74;">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+    <!-- Back to Top End -->
+    <!-- Backtop script -->
+    <script>
+        document.getElementById("backToTop").addEventListener("click", function (event) {
+            event.preventDefault(); // Evita que el enlace siga el comportamiento predeterminado
+            window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplazamiento suave hacia arriba
         });
-    });
+    </script>
+    <!-- Backtop script End -->
 
-    // SOCIAL PANEL JS
-    const floating_btn = document.querySelector('.floating-btn');
-    const close_btn = document.querySelector('.close-btn');
-    const social_panel_container = document.querySelector('.social-panel-container');
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
-    floating_btn.addEventListener('click', () => {
-        social_panel_container.classList.toggle('visible')
-    });
+    <!-- Script to Setup Calendar to DD/MM/YY -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script>
+        const toggles = document.querySelectorAll('.faq-toggle');
 
-    close_btn.addEventListener('click', () => {
-        social_panel_container.classList.remove('visible')
-    });
-</script>
-<!-- Script to Setup Calendar to DD/MM/YY End-->
+        toggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                toggle.parentNode.classList.toggle('active');
+            });
+        });
 
-<!-- Script para corregir el calendario -->
-<!-- Template Javascript -->
-<script src="js/main.js"></script>
+        // SOCIAL PANEL JS
+        const floating_btn = document.querySelector('.floating-btn');
+        const close_btn = document.querySelector('.close-btn');
+        const social_panel_container = document.querySelector('.social-panel-container');
+
+        floating_btn.addEventListener('click', () => {
+            social_panel_container.classList.toggle('visible')
+        });
+
+        close_btn.addEventListener('click', () => {
+            social_panel_container.classList.remove('visible')
+        });
+    </script>
+    <!-- Script to Setup Calendar to DD/MM/YY End-->
+
+    <!-- Script para corregir el calendario -->
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
