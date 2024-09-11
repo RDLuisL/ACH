@@ -1,4 +1,4 @@
-.float{
+/* .float{
 	position:fixed;
 	width:60px;
 	height:60px;
@@ -20,6 +20,75 @@
 
 .my-float{
 	margin-top:16px;
+} */
+
+/* Contact Info Styling */
+.contact-info {
+    margin-top: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.contact-item img {
+    border-radius: 50%;
+}
+
+.contact-item p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contact-item span {
+    font-size: 14px;
+    color: gray;
+}
+
+.send-btn {
+    background-color: #4cc370;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.send-btn i {
+    font-size: 20px;
+}
+
+.send-btn:hover {
+    background-color: #3d9e5a;
+}
+
+/* Positioning and Styling */
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 15px;
+    right: 16px;
+    background-color: #4cc370;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.float:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #3d9e5a;
+}
+
+.my-float {
+    margin-top: 16px;
 }
 
 

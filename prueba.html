@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Stack Progression</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,700,900");
+        @import url("https://fonts.googleapis.com/css?family=Palanquin:300");
+
+        body {
+            height: 100vh;
+            width: 100%;
+            margin: 0;
+            font-family: 'Palanquin', sans-serif;
+            font-size: 21px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            position: relative;
+            max-width: 360px;
+            width: 100%;
+            height: 300px;
+        }
+
+        .card-stack {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.35);
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            z-index: 2;
+        }
+
+        .card-stack:nth-child(1) {
+            transform: translateY(-40px) translateX(40px);
+        }
+
+        .card-stack:nth-child(2) {
+            transform: translateY(-30px) translateX(30px);
+        }
+
+        .card-stack:nth-child(3) {
+            transform: translateY(-20px) translateX(20px);
+        }
+
+        .card-stack:nth-child(4) {
+            transform: translateY(-10px) translateX(10px);
+        }
+
+        .card {
+            position: relative;
+            background: #fff;
+            border-radius: 5px;
+            padding: 2em 0;
+            height: 300px;
+            box-sizing: border-box;
+            box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.35);
+            z-index: 3;
+        }
+
+        .content {
+            position: absolute;
+            top: 2em;
+            left: 10%;
+            width: 80%;
+            margin: 0 auto;
+            opacity: 0;
+            display: none;
+        }
+
+        .active {
+            display: block !important;
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+
+        .progress-container {
+            background: rgba(37, 117, 252, 0.2);
+            height: 6px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            border-radius: 0 0 5px 5px;
+        }
+
+        .step {
+            background-color: #303E74;
+            height: 6px;
+            width: 20%;
+            border-radius: 0 0 0 5px;
+            transition: width 0.3s ease;
+        }
+
+        h1 {
+            font-family: 'Titillium Web', sans-serif;
+            font-weight: 700;
+            font-size: 2.5rem;
+            color: #;
+            margin: 0;
+        }
+
+        p {
+            margin-top: 0;
+        }
+
+        a {
+            color: #00CED1;
+            text-decoration: none;
+            position: relative;
+            cursor: pointer;
+        }
+
+        a:before {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 0;
+            width: 0%;
+            border-bottom: 2px solid #00CED1;
+            transition: 0.3s;
+        }
+
+        a:hover:before {
+            width: 80%;
+        }
+    </style>
+</head>
+
+<body translate="no">
+    <div class="container">
+        <!-- Tarjetas apiladas -->
+        <div class="card-stack stack-1"></div>
+        <div class="card-stack stack-2"></div>
+        <div class="card-stack stack-3"></div>
+        <div class="card-stack stack-4"></div>
+        
+        <!-- Tarjeta actual -->
+        <div class="card">
+            <!-- Paso 1 -->
+            <div class="content active">
+                <img src="/img/steps/high_5.png" style="width: 120px; margin-top: -20px;">
+                <h1>Sólo 5 pasos</h1>
+                
+                <a class="button">Siguiente&rarr;</a>
+            </div>
+
+            <!-- Paso 2 -->
+            <div class="content">
+                <img src="/img/steps/cellphone_hand.png" style="width: 120px; margin-top: -30px; margin-bottom: -20px;">
+                <h1>Agenda en línea</h1>
+                <a class="button">Siguiente&rarr;</a>
+            </div>
+
+            <!-- Paso 3 -->
+            <div class="content">
+                <img src="/img/steps/path.png" style="width: 150px; margin-top: -30px;">
+                <h1>Trasladamos</h1>
+               
+                <a class="button">Siguiente&rarr;</a>
+            </div>
+
+            <!-- Paso 4 -->
+            <div class="content">
+                <img src="/img/steps/handtool_sponge.png" style="width: 120px;  margin-top: -30px;">
+                <h1>Tú Servicio</h1>
+       
+                <a class="button">Siguiente&rarr;</a>
+            </div>
+
+            <!-- Paso 5 -->
+            <div class="content">
+                <img src="/img/steps/done.png" style="width: 200px;">
+                <h1>Afinado</h1>
+               
+                <a class="button">Volver &rarr;</a>
+            </div>
+
+            <div class="progress-container">
+                <div class="step"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+    <script>
+        $(document).ready(function () {
+
+            var content = $('.content');
+            var currentItem = content.filter('.active');
+            var cardStack = $('.card-stack');
+
+            $('.button').click(function () {
+                var nextItem = currentItem.next('.content');
+                var lastItem = content.last();
+                var contentFirst = content.first();
+
+                currentItem.removeClass('active');
+
+                if (currentItem.is(lastItem)) {
+                    currentItem = contentFirst.addClass('active');
+                    $('.step').animate({ width: '20%' });
+
+                    // Reiniciar las tarjetas apiladas
+                    cardStack.each(function (index) {
+                        $(this).css('opacity', '1');
+                        var translateY = (-10 * (4 - index)) + 'px';
+                        $(this).css('transform', 'translateY(' + translateY + ')');
+                    });
+
+                } else {
+                    currentItem = nextItem.addClass('active');
+                    var stepWidth = (content.index(currentItem) + 1) * 20 + '%';
+                    $('.step').animate({ width: stepWidth });
+
+                    // Ocultar una tarjeta apilada
+                    var currentStep = content.index(currentItem);
+                    cardStack.eq(4 - currentStep).css('opacity', '0');
+                }
+
+                currentItem = $('.content.active');
+            });
+
+        });
+    </script>
+</body>
+
+</html>
