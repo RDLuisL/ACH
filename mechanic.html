@@ -53,7 +53,7 @@
         <div class="row gx-0 d-none d-lg-flex">
             <div class="col-lg-7 px-5 text-start">
                 <div class="h-100 d-inline-flex align-items-center py-0">
-                    <img src="../img/reloj.png" style="width: 20px; #303E74">
+                    <img src="../img/reloj.png" style="width: 20px; color: #303E74">
                     <small class="ps-2">Lun - Vie : 09:00 - 19:00, Sáb : 09:00 AM - 14:00</small>
                 </div>
             </div>
@@ -81,7 +81,7 @@
     </div>
     <!-- Topbar End -->
 
-    <!-- Navbar Start -->
+    <!-- Navbar Start ✔️-->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <h2 class="m-0 text-primary" style="color: #303E74 !important">
@@ -101,11 +101,9 @@
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Servicios</a>
                     <div class="dropdown-menu fade-up m-0">
-                        <a href="documentation.html#revision-tecnica" class="dropdown-item">Gestión de Revisión Técnica
-                            y otra Documentación</a>
-                        <a href="wash_detailing.html#wash" class="dropdown-item">Lavado Ecológico de Autos y Detailing a
-                            Domicilio</a>
-                        <a href="mechanic.html#aceite" class="dropdown-item">Cambio de Aceite y Filtros</a>
+                        <a href="documentation.html" class="dropdown-item">Documentos del Vehículo</a>
+                        <a href="mechanic.html" class="dropdown-item">Mantención del Vehiculo</a>
+                        <a href="wash_detailing.html" class="dropdown-item">Limpieza del Interior y Exterior del Vehículo</a>
                         <a href="electrocar.html#parabrisa" class="dropdown-item">Reparación y Cambio de Parabrisas</a>
                         <a href="electrocar.html#paperglass" class="dropdown-item">Papel Polarizado y de Seguridad</a>
                         <a href="electrocar.html#currentcut" class="dropdown-item">Electroauto y Sistemas de
@@ -138,7 +136,7 @@
                                         detalle //</h6>
                                     <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">Mecánica Ligera en
                                         General</h1>
-                                    <a href="mechanic.html#brakes"
+                                    <a href="mechanic.html#10k"
                                         class="btn btn-primary py-3 px-5 animated slideInDown rounded-pill"
                                         style="border: none ; background-color: #303E74; color: #DDDC2A  !important">Conozca
                                         más<i class="fa fa-arrow-right ms-3"></i></a>
@@ -212,15 +210,22 @@
     </div>
     <!-- Carousel End -->
 
+    <!-- Back to Top -->
+    <a href="#" id="backToTop" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+        style="border: none; border-radius: 5px; background-color: #DDDC2A; color: #303E74;">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+    <!-- Back to Top End -->
+
     <!-- Services Start -->
     <div class="container-fluid service bg-light py-5">
         <div class="container py-5">
             <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                <p class="text-uppercase text-secondary fs-5 mb-0">
+                <p class="text-uppercase text-secondary mb-0" style="font-size: 15px;">
                     <img src="img/race_flag_icon.png" style="width: 40px;"> Brillando en cada detalle
                     <img src="img/race_flag_icon.png" style="width: 40px;">
                 </p>
-                <h2 class="display-4 text-capitalize mb-3">Servicios de Mecánica Ligera</h2>
+                <h3 class="display-4 text-capitalize mb-3">Servicios de Mecánica Ligera</h3>
                 <h5 id="mecanica">
                     Mantenemos tu vehículo en óptimas condiciones, con revisiones rápidas y confiables para tu
                     seguridad. Preventivas y correctivas.
@@ -245,13 +250,12 @@
                     </h4>
             </div>
             <div class="row justify-content-center g-4">
-                <!-- Services End -->
 
                 <!-- Brakes Card -->
                 <div class="col-lg-4 wow fadeInUp" id="revision-tecnica" data-wow-delay="0.2s" id="brakes">
                     <div class="service-item">
                         <div class="service-img">
-                            <img src="img/frenos_1_500_x_600.jpg" class="img-fluid w-100" alt="Image"
+                            <img src="img/brakes_500x900.png" class="img-fluid w-100" alt="Image"
                                 style="border-radius: 20px;">
                         </div>
                         <div class="service-content text-center p-4">
@@ -297,19 +301,20 @@
                 <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s" id="aceite">
                     <div class="service-item">
                         <div class="service-img">
-                            <img src="img/oil.jpg" class="img-fluid w-100" alt="Image" style="border-radius: 20px;">
+                            <img src="img/oil_500x900.png" class="img-fluid w-100" alt="Image"
+                                style="border-radius: 20px;">
                         </div>
                         <div class="service-content text-center p-4">
+
                             <!-- Modal Prices -->
                             <div class="modal-frame">
                                 <div class="modal">
                                     <div class="modal-inset">
                                         <button class="close-btn">×</button>
                                         <div class="modal-body">
-                                            <img src="img/change_oil_icon.png"
-                                                style="width: 80px;">
+                                            <img src="img/change_oil_icon.png" style="width: 80px;">
                                             <p style="text-align: justify;">Desde: $79.990</p>
-                                            
+
                                             <ul class="mb-2 me-4">
                                                 El servicio incluye:
                                                 <li style="text-align: justify;">
@@ -334,8 +339,8 @@
                             <div class="modal-overlay"></div>
                             <button class="fancy-btn open rounded-pill"
                                 style="border: none ; background-color: #303E74; color: #DDDC2A  !important; margin-top: 30px; margin-bottom: -20px;">Precios</button>
-
                             <!-- Modal Prices END-->
+
                             <h3 class="d-block fs-3 my-2 text-white">
                                 Cambio de Aceite y Filtros
                             </h3>
@@ -347,10 +352,6 @@
                                 <li style="text-align: justify;">
                                     Reemplazamos el filtro de aire para que el motor reciba un flujo de aire limpio y
                                     sin obstrucciones.
-                                </li>
-                                <li style="text-align: justify;">
-                                    Cambio de filtro de polen (Aire Acondicionado). mantenga el aire interior libre de
-                                    polvo, polen y otras impurezas.
                                 </li>
                             </ul>
                             <a class="btn btn-secondary py-2 px-4 rounded-pill mt-4" href="javascript:void(0);"
@@ -364,7 +365,7 @@
                         </div>
                         <div class="service-tytle">
                             <div class="d-flex align-items-center justify-content-start ps-4 w-100">
-                                <h4>Mantenimiento Esencial para un Motor</h4>
+                                <h4 class="pt-2">Mantenimiento Esencial para un Motor</h4>
                             </div>
                             <div class="btn-xl-square bg-secondary p-4" style="width: 80px; height: 80px;">
                                 <img src="img/change_oil_icon_white.png" style="width: 55px; margin: -14px 0  0 -12px;">
@@ -378,12 +379,12 @@
                 <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.6s" id="battery">
                     <div class="service-item">
                         <div class="service-img">
-                            <img src="img/battery_change.jpg" class="img-fluid w-100" alt="Image"
+                            <img src="img/battery_500x900.png" class="img-fluid w-100" alt="Image"
                                 style="border-radius: 20px;">
                         </div>
                         <div class="service-content text-center p-2">
 
-                            
+
                             <img src="img/battery_icon.png" style="width: 100px;">
                             <h3 class="d-block fs-3 my-4 text-white">
                                 Cambio de Batería
@@ -416,12 +417,14 @@
                     </div>
                 </div>
                 <!-- Battery Card End -->
+                
+                <div class="row justify-content-center g-4">
 
                 <!-- Vehicle Washing and Greasing Card -->
                 <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.7s" id="chassis">
                     <div class="service-item">
                         <div class="service-img">
-                            <img src="img/wash_grease_before_after.jpg" class="img-fluid w-100" alt="Image"
+                            <img src="img/wash_grease_500x900.png" class="img-fluid w-100" alt="Image"
                                 style="border-radius: 20px;">
                         </div>
                         <div class="service-content text-center p-2">
@@ -467,20 +470,19 @@
                                 </li>
                                 <li style="text-align: justify;">
                                     Aplicación de tratamiento extra anticorrosivo de zinc, es un adicional.
-                                    <a href="javascript:void(0);"onclick="openWhatsApp('ac')" target="_blank"
-                                style="border: none; color: white;">
-                                Contáctenos <img src="img/whastapp_icon_white.png"
-                                    style="width: 19px; margin-left:5px;">
-                            </a>
+                                    <a href="javascript:void(0);" onclick="openWhatsApp('ac')" target="_blank"
+                                        style="border: none; color: white;">
+                                        Contáctenos <img src="img/whastapp_icon_white.png"
+                                            style="width: 19px; margin-left:5px;">
+                                    </a>
                                 </li>
-        
-                                    
+
+
                             </ul>
                             <a class="btn btn-secondary py-2 px-4 rounded-pill" href="sched-wash-grease.html"
                                 target="_blank"
                                 style="border: none; background-color: #303E74; color: #DDDC2A !important;">
-                                Agende aquí<img src="img/calendly_icon_white.png"
-                                    style="width: 25px; margin-left: 10px;">
+                                Agende aquí<img src="img/calendar_icon.png" style="width: 25px; margin-left: 10px;">
                             </a>
                         </div>
                         <div class="service-tytle">
@@ -500,7 +502,7 @@
                 <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.9s" id="engine">
                     <div class="service-item">
                         <div class="service-img">
-                            <img src="img/engine_before_after.jpg" class="img-fluid w-100" alt="Image"
+                            <img src="img/engine_after_500x900.png" class="img-fluid w-100" alt="Image"
                                 style="border-radius: 20px;">
                         </div>
                         <div class="service-content text-center p-2">
@@ -525,7 +527,7 @@
                             </div>
                             <div class="modal-overlay"></div>
                             <button class="fancy-btn open rounded-pill"
-                                style="border: none ; background-color: #303E74; color: #DDDC2A  !important">Precios</button>
+                                style="margin-top: 20px; margin-bottom: -20px; border: none ; background-color: #303E74; color: #DDDC2A  !important">Precios</button>
                             <!-- Modal Prices END-->
 
                             <h3 class="d-block fs-3 text-white">
@@ -540,7 +542,7 @@
                                     Un motor limpio facilita la identificación de fugas de aceite u otros líquidos,
                                     permitiendo aislar problemas menores.
                                 </li>
-                                <li style="text-align: justify;">
+                                <li style="text-align: justify; margin-bottom: -10px;">
                                     ¿Estás preparando tu vehículo para la venta? Un motor en buen estado sugiere un
                                     mantenimiento regular y adecuado, un factor clave que los compradores valoran al
                                     tomar su decisión.
@@ -548,13 +550,12 @@
                             </ul>
                             <a class="btn btn-secondary py-2 px-4 rounded-pill" href="sched-engine.html" target="_blank"
                                 style="border: none; background-color: #303E74; color: #DDDC2A !important;">
-                                Agende aquí<img src="img/calendly_icon_white.png"
-                                    style="width: 25px; margin-left: 10px;">
+                                Agende aquí<img src="img/calendar_icon.png" style="width: 25px; margin-left: 10px;">
                             </a>
                         </div>
                         <div class="service-tytle">
                             <div class="d-flex align-items-center justify-content-start ps-4 w-100">
-                                <h4>Protección desde el Corazón de tu Vehículo</h4>
+                                <h4 class="pt-2">Protección desde el Corazón de tu Vehículo</h4>
                             </div>
                             <div class="btn-xl-square bg-secondary p-4" style="width: 80px; height: 80px;">
                                 <img src="img/wash_engine_white.png" style="width: 60px; margin: -15px 0  0 -13px;">
@@ -568,7 +569,7 @@
                 <div class="col-lg-4 wow fadeInUp" data-wow-delay="1.2s" id="ac">
                     <div class="service-item">
                         <div class="service-img">
-                            <img src="img/ac_technician500x600.jpg" class="img-fluid w-100" alt="Image"
+                            <img src="img/ac_500x900.png" class="img-fluid w-100" alt="Image"
                                 style="border-radius: 20px;">
                         </div>
                         <div class="service-content text-center p-2">
@@ -578,7 +579,7 @@
                             <h3 class="d-block fs-3 my-4 text-white">
                                 Aire Acondicionado
                             </h3>
-                            <ul class="text-white mb-4">
+                            <ul class="text-white mb-4 me-4">
                                 <li style="text-align: justify;">
                                     Limpieza del evaporador y condensado.
                                 </li>
@@ -617,16 +618,18 @@
                 </div>
                 <!-- AC Card End -->
 
+                <div class="row justify-content-center g-4"></div>
+
                 <!-- Tyres Card -->
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1.2s" id="cauchos">
                     <div class="service-item">
                         <div class="service-img">
-                            <img src="img/wheels_600x500.png" class="img-fluid w-100" alt="Image"
+                            <img src="img/car_alignment_500x900.png" class="img-fluid w-100" alt="Image"
                                 style="border-radius: 20px;">
                         </div>
-                        <div class="service-content text-center p-2">
-                            <img src="img/wheels_icon_white.png" style="height: 150px;">
-                            <h3 class="d-block fs-3 my-4 text-white">
+                        <div class="service-content text-center">
+                            <img src="img/wheels_icon_white.png" style="height: 100px;">
+                            <h3 class="d-block fs-3 text-white">
                                 Neumáticos
                             </h3>
                             <ul class="text-white mb-4 me-4">
@@ -669,10 +672,11 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1.4s" id="10k">
                     <div class="service-item">
                         <div class="service-img">
-                            <img src="img/pre_purchase_inspection500x900.jpg" class="img-fluid w-100" alt="Image"
+                            <img src="img/maintenance_10K_500x900.png" class="img-fluid w-100" alt="Image"
                                 style="border-radius: 20px;">
                         </div>
-                        <div class="service-content text-center p-4">
+                        <!-- Modal Precio -->
+                        <div class="service-content text-center ">
                             <div class="modal-frame">
                                 <div class="modal">
                                     <div class="modal-inset">
@@ -695,26 +699,28 @@
                                 </div>
                             </div>
                             <div class="modal-overlay"></div>
+                            <!-- Modal Precio End -->
                             <button class="fancy-btn open rounded-pill"
-                                style="border: none ; background-color: #303E74; color: #DDDC2A  !important">Precios</button>
-                            <h3 class="d-block fs-3 my-4 text-white">Mantenimiento de 10.000 Km</h3>
+                                style="border: none ; margin-bottom: -20px; background-color: #303E74; color: #DDDC2A  !important">Precios</button>
+                            <h3 class="d-block fs-3  text-white">Mantenimiento de 10.000 Km</h3>
                             <ul class="text-white mb-2 me-4">
                                 <li style="text-align: justify;">Revisión de niveles de fluido y relleno mejora nivel de
                                     operación.</li>
                                 <li style="text-align: justify;">Revisión de correas detecta cualquier desgaste o
                                     daño, previniendo fallas inesperadas.</li>
-                                <li style="text-align: justify;">Cambio de aceite y filtros alarga la vida de tu motor.</li>
+                                <li style="text-align: justify;">Cambio de aceite y filtros alarga la vida de tu motor.
+                                </li>
                                 <li style="text-align: justify;">Inspección del tren delantero y amortiguadores.</li>
                                 <li style="text-align: justify;">Rotación de neumáticos.</li>
                                 <li style="text-align: justify;">Lavado full (interior y exterior).</li>
                             </ul>
-                            <a class="btn btn-secondary py-2 px-4 rounded-pill my-4" href="javascript:void(0);"
+                            <a class="btn btn-secondary py-2 px-4 rounded-pill" href="javascript:void(0);"
                                 onclick="openWhatsApp('10k')" target="_blank"
                                 style="border: none; background-color: #303E74; color: #DDDC2A !important;">
                                 Contáctenos <img src="img/whastapp_icon_white.png"
                                     style="width: 25px; margin-left: 10px;">
                             </a>
-                            <h6 style="font-style: italic; color: white;">
+                            <h6 style="font-style: italic; color: white; margin-top: 15px;">
                                 Recomendamos leer más acerca del mantenimiento preventivo
                                 <a href="maintenance.html" style="color: #DDDC2A; text-shadow: 
                                 1px 1px 0 #000,  
@@ -725,7 +731,7 @@
                         </div>
                         <div class="service-tytle">
                             <div class="d-flex align-items-center justify-content-start ps-4 w-100">
-                                <h4>Cuidado Integral que tu Vehículo Merece</h4>
+                                <h4 class="pt-2">Cuidado Integral que tu Vehículo Merece</h4>
                             </div>
                             <div class="btn-xl-square bg-secondary p-4" style="width: 80px; height: 80px;">
                                 <img src="img/car_maint_icon_white.png" style="width: 55px; margin: -19px 0  0 -11px;">
@@ -734,19 +740,20 @@
                     </div>
                 </div>
                 <!-- 10 K Maintenance Card End -->
+                </div>
             </div>
         </div>
     </div>
     <!-- Services End -->
 
-    <!-- Footer Start -->
+    <!-- Footer Start ✔️-->
     <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s"
         style="background-image: url('img/fiber_carbon_dark_mesh.jpg')">
         <div class="container py-5">
             <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 ">
                     <h4 class="text-light mb-4" style="filter: brightness(100%) !important">Contáctenos</h4>
-                    <a href="https://wa.me/+56986870079" style="color: white" target="_blank">
+                    <a href="href=" tel:+56986870079" style="color: white" target="_blank">
                         <img src="../img/telefono_icono_white.png" style="width: 30px">
                         +56 9 8687 0079
                     </a>
@@ -766,45 +773,67 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 ">
                     <h4 class="text-light mb-4">Horarios</h4>
                     <h6 class="text-light">Lunes - Viernes:</h6>
                     <p class="mb-4">09:00 - 19:00</p>
                     <h6 class="text-light">Sábado:</h6>
                     <p class="mb-0">09:00 - 14:00</p>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 ">
                     <h4 class="text-light mb-4">Servicios</h4>
-                    <a class="btn btn-link" href="">Gestión de Revisión Técnica y Documentación</a>
-                    <a class="btn btn-link" href="">Mecánica Ligera</a>
-                    <a class="btn btn-link" href="">Cambio de Aceite</a>
-                    <a class="btn btn-link" href="">Parabrisas</a>
-                    <a class="btn btn-link" href="">Papel Polarizado y Seguridad</a>
-                    <a class="btn btn-link" href="">Electroauto y Sistema de Seguridad</a>
+                    <a class="btn btn-link" href="documentation.html">Gestión de Revisión
+                        Técnica y Documentación</a>
+                    <a class="btn btn-link" href="mechanic.html">Mecánica Ligera</a>
+                    <a class="btn btn-link" href="mechanic.html#aceite">Cambio de Aceite</a>
+                    <a class="btn btn-link" href="mechanic.html#parabrisa">Parabrisas</a>
+                    <a class="btn btn-link" href="mechanic.html#paperglass">Papel Polarizado y
+                        Seguridad</a>
+                    <a class="btn btn-link" href="electrocar.html">Electroauto y Sistema de
+                        Seguridad</a>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 ">
                     <h4 class="text-light mb-4">Políticas</h4>
-                    <a class="btn btn-link" href="term_and_cond.html">Términos y Condiciones</a>
+                    <a class="btn btn-link" href="term_and_cond.html">Términos y
+                        Condiciones</a>
                     <a class="btn btn-link" href="privacity.html">De Privacidad</a>
                 </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">www.autocarhub.cl</a>, Todos los derechos
-                        reservados@2024.
-                        by <a class="border-bottom" href="https://github.com/RDLuisL" target="_blank"
-                            style="text-decoration: none !important;"> <img src="img/lluna_sign_white.png" alt="RDLuisL"
-                                style="height: 50px; text-decoration: none !important;"> </a>
+                <!-- Contador de visitas -->
+                <div style="display: flex; position: relative; width: 400px; height: 400px; margin-bottom: -150px;">
+                    <!-- Imagen del tacómetro detrás -->
+                    <div style="position: relative; width: 300px; height: 400px;">
+                        <!-- Imagen del tacómetro detrás -->
+                        <img src="img/tacometro.png"
+                            style="position: absolute; top: 0; left: 0; width: 100%; z-index: 1;" alt="tacometro">
+                        <!-- Imagen del contador de vehiculos encima del tacómetro -->
+                        <img src="https://i.postimg.cc/dtYX4NZN/vehiculos.png"
+                            style="position: absolute; top: 19%; left: 28%; width: 37px; z-index: 4;"
+                            alt="contador de vehiculos">
+                        <!-- Imagen del contador de visitas encima del tacómetro -->
+                        <img src="https://www.web-counter.net/count_20091204.php?c=yrKHilxvgwb"
+                            style="position: absolute; top: 38%; left: 25%; width: 75px; z-index: 2;"
+                            alt="contador de visitas">
                     </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <div class="footer-menu">
-                            <a href="">Inicio</a>
-                            <a href="">Cookies</a>
-                            <a href="faqs.html">Preguntas Frecuentes</a>
+                    <!-- Fin Contador de visitas -->
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class=" text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">www.autocarhub.cl</a>, Todos los derechos
+                            reservados@2024.
+                            by <a class="border-bottom" href="https://github.com/RDLuisL" target="_blank"
+                                style="text-decoration: none !important;"> <img src="img/lluna_sign_white.png"
+                                    alt="RDLuisL" style="height: 50px; text-decoration: none !important;"> </a>
+                        </div>
+                        <div class=" text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="index.html">Inicio</a>
+                                <a href="cookies.html">Cookies</a>
+                                <a href="faqs.html">Preguntas Frecuentes</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -813,54 +842,27 @@
     </div>
     <!-- Footer End -->
 
-    <!-- Back to Top -->
-    <a href="#" id="backToTop" class="btn btn-lg btn-primary btn-lg-square back-to-top"
-        style="border: none; border-radius: 5px; background-color: #DDDC2A; color: #303E74;">
-        <i class="bi bi-arrow-up"></i>
-    </a>
-    <!-- Back to Top End -->
-    <!-- Backtop script -->
-    <script>
-        document.getElementById("backToTop").addEventListener("click", function (event) {
-            event.preventDefault(); // Evita que el enlace siga el comportamiento predeterminado
-            window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplazamiento suave hacia arriba
-        });
-    </script>
-    <!-- Backtop script End -->
-
-    <!-- JavaScript Libraries -->
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="../js/main.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-    <script src="lib/whatsapp2.js"></script>
-    <script src="lib/modal_prices.js"></script>
-
-    <!-- Script to Setup Calendar to DD/MM/YY -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/js/tempusdominus-bootstrap-4.min.js"></script>
-    <script>
-        $(function () {
-            $('#date1').datetimepicker({
-                format: 'DD/MM/YYYY'
-            });
-        });
-    </script>
-    <!-- Script to Setup Calendar to DD/MM/YY End-->
-
-    <!-- Script para corregir el calendario -->
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/tempusdominus/js/moment.min.js"></script>
+        <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+        <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+        <script src="lib/whatsapp.js"></script>
+        <script src="lib/whatsapp2.js"></script>
+        <script src="/lib/spinner.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="/lib/backtop.js"></script>
+        <script src="lib/modal_prices.js"></script>
+        <!-- No Swanging Code Script -->
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <!-- JavaScript Libraries End -->
 </body>
 
 </html>

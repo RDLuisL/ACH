@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Términos y Condiciones | Brillando en cada detalle</title>
+    <title>Auto Carehub - Brillando en cada detalle</title>
     <link rel="icon" href="img/ACH-ICO.ico" type="image/x-icon">
+
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -24,7 +25,7 @@
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -32,10 +33,15 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
 
     <!-- Template Stylesheet -->
-    <link href="css/faqs.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/contact.css" rel="stylesheet">
+    <link href="css/whats.css" rel="stylesheet">
+    <link href="css/whats2.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swaying.css">
+    <link rel="stylesheet" href="css/steps.css">
 </head>
 
 <body>
@@ -53,7 +59,7 @@
         <div class="row gx-0 d-none d-lg-flex">
             <div class="col-lg-7 px-5 text-start">
                 <div class="h-100 d-inline-flex align-items-center py-0">
-                    <img src="../img/reloj.png" style="width: 20px; #303E74">
+                    <img src="../img/reloj.png" style="width: 20px; color: #303E74">
                     <small class="ps-2">Lun - Vie : 09:00 - 19:00, Sáb : 09:00 AM - 14:00</small>
                 </div>
             </div>
@@ -125,6 +131,44 @@
     </nav>
     <!-- Navbar End -->
 
+    <!-- Back to Top -->
+    <a href="#" id="backToTop" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+        style="border: none; border-radius: 5px; background-color: #DDDC2A; color: #303E74;">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+    <!-- Back to Top End -->
+
+    <!-- Whatsapp -->
+    <div class="nav-bottom">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <div class="popup-whatsapp fadeIn">
+            <div class="content-whatsapp -top">
+                <button type="button" class="closePopup">
+                    <i class="material-icons icon-font-color">close</i>
+                </button>
+
+                <p>
+                    <img src="img/ACH_secretary.png" width="50" /> Hola, ¿En
+                    que puedo ayudarte?
+                </p>
+            </div>
+            <div class="content-whatsapp -bottom">
+                <input class="whats-input" id="whats-in" type="text" placeholder="Enviar mensaje..." />
+
+                <button class="send-msPopup" id="send-btn" type="button">
+                    <i class="material-icons icon-font-color--black">send</i>
+                </button>
+            </div>
+        </div>
+        <button type="button" id="whats-openPopup" class="whatsapp-button">
+            <div class="float">
+                <i class="fa fa-whatsapp my-float"></i>
+            </div>
+        </button>
+        <div class="circle-anime"></div>
+    </div>
+    <!-- Whatsapp End -->
+
     <!-- Terms and Conditions Terms -->
     <div class="container text-center">
         <h2 class="display-3 mb-3 animated slideInDown" style="color: #303E74 ; margin: 40px 0 20px 0">Términos y
@@ -136,33 +180,45 @@
 
         <ul style="list-style-type: none; text-align: justify; margin: 40px 0 20px 0">
             <!-- Generalidades -->
-            <li style="margin: 40px 0 20px 0;"><strong style="text-transform: uppercase;">1. Generalidades</strong></li>
-            <p>Estos Términos y Condiciones regulan el acceso y uso del sitio web www.autocarehub.cl y los servicios
+            <li style="font-size: 18px; margin: 40px 0 20px 0;"><strong style="text-transform: uppercase;">1.
+                    Generalidades</strong></li>
+            <p style="font-size: 18px; margin-right: 20px;">Estos Términos y Condiciones regulan el acceso y uso del sitio web
+                www.autocarehub.cl y los servicios
                 ofrecidos por Auto Carehub 3000 SpA, en adelante “Auto Carehub 3000”o “Auto Carehub” o “La Empresa”,
                 indistintamente.</p>
-            <p>Se considera "El Usuario" a la persona que contrata los servicios ofrecidos en la plataforma
+            <p style="font-size: 18px; margin-right: 20px;">Se considera "El Usuario" a la persona que contrata los servicios ofrecidos en
+                la plataforma
                 Autocarehub.cl y a través de WhatsApp. Al utilizar este sitio web y/o contratar los servicios, el
                 usuario acepta cumplir íntegramente con estos Términos y Condiciones.</p>
-            <p>Se recomienda leer este documento en su totalidad junto con la Política de Privacidad de la plataforma,
+            <p style="font-size: 18px; margin-right: 20px;">Se recomienda leer este documento en su totalidad junto con la Política de
+                Privacidad de la plataforma,
                 ya que contiene información legal.</p>
-            <p>Estos Términos y Condiciones, junto con la Política de Privacidad, constituyen el contrato completo entre
+            <p style="font-size: 18px; margin-right: 20px;">Estos Términos y Condiciones, junto con la Política de Privacidad, constituyen
+                el contrato completo entre
                 el Usuario y Auto Carehub 3000 SpA en relación con el contenido de este documento.</p>
 
             <!-- Aceptación -->
-            <li style="margin: 40px 0 20px 0;"><strong style="text-transform: uppercase;">2. Aceptación</strong></li>
-            <p>La contratación de cualquiera de los servicios ofrecidos en la plataforma Autocarehub.cl o la solicitud
+            <li style="font-size: 18px; margin: 40px 0 20px 0;"><strong style="text-transform: uppercase;">2.
+                    Aceptación</strong></li>
+            <p style="font-size: 18px; margin-right: 20px;">La contratación de cualquiera de los servicios ofrecidos en la plataforma
+                Autocarehub.cl o la solicitud
                 de servicios ofrecidos por la Empresa a través de WhatsApp implica la aceptación de estos Términos y
                 Condiciones, así como de cualquier otro término relacionado con la prestación de los servicios.</p>
-            <p>Sin la aceptación de estos Términos y Condiciones no se puede acceder a los Servicios ofrecidos en la
+            <p style="font-size: 18px; margin-right: 20px;">Sin la aceptación de estos Términos y Condiciones no se puede acceder a los
+                Servicios ofrecidos en la
                 Plataforma Autocarehub.cl o a través de WhatsApp.</p>
-            <p>Los Servicios de la Empresa solamente pueden ser contratados por mayores de 18 años.</p>
-            <p>Cualquier modificación a estos Términos y Condiciones será oportunamente notificada al Usuario para su
+            <p style="font-size: 18px; margin-right: 20px;">Los Servicios de la Empresa solamente pueden ser contratados por mayores de 18
+                años.</p>
+            <p style="font-size: 18px; margin-right: 20px;">Cualquier modificación a estos Términos y Condiciones será oportunamente
+                notificada al Usuario para su
                 aceptación. </p>
 
             <!-- Descripción de Servicios -->
-            <li style="margin: 40px 0 20px 0;"><strong style="text-transform: uppercase;">3. Descripción de
+            <li style="font-size: 18px; margin: 40px 0 20px 0;"><strong style="text-transform: uppercase;">3.
+                    Descripción de
                     Servicios</strong></li>
-            <p>La descripción de los servicios incluye, entre otros, mantenimiento mecánico, reparaciones,
+            <p style="font-size: 18px; margin-right: 20px;">La descripción de los servicios incluye, entre otros, mantenimiento mecánico,
+                reparaciones,
                 desabolladuras, cambio de piezas, lavado y limpieza, inscripciones en registros civiles, obtención y
                 renovación de permisos de circulación, instalación de láminas de seguridad, venta e instalación de
                 accesorios, cambio de neumáticos, inspección de diagnóstico y revisión técnica. Los detalles específicos
@@ -172,17 +228,19 @@
             <!-- Descripción de Servicios -->
 
             <!-- Ops and Comunications -->
-            <li style="margin: 40px 0 20px 0;"><strong style="text-transform: uppercase;">4. Operador y
+            <li style="font-size: 18px; margin: 40px 0 20px 0;"><strong style="text-transform: uppercase;">4. Operador y
                     Comunicaciones</strong></li>
-            <p> La Plataforma Autocarehub.cl es operada por la sociedad por acciones “Auto carehub 300 SpA”, Rol Único
+            <p style="font-size: 18px; margin-right: 20px;"> La Plataforma Autocarehub.cl es operada por la sociedad por acciones “Auto
+                carehub 300 SpA”, Rol Único
                 Tributario número 77.969.784-3, representada legalmente por Tania Victoria Tellería de López, cédula de
                 identidad número 25.917.065-6, por Miguel Ángel Luchoni Romero, cédula de identidad número 26.030.526-3.
             </p>
-            <p> Para comunicarse con Autocarehub.cl, se encuentra disponible 24/7 el servicio de atención al cliente por
+            <p style="font-size: 18px; margin-right: 20px;"> Para comunicarse con Autocarehub.cl, se encuentra disponible 24/7 el servicio
+                de atención al cliente por
                 la plataforma o enviando un correo electrónico a la dirección contacto@autocarehub.cl o escribiendo un
                 WhatsApp al número +56 9 8687 0079 de lunes a sábado de 09:00 hrs a 18:00hrs.
             </p>
-            <p>
+            <p style="font-size: 18px; margin-right: 20px;">
                 Auto Carehub se comunicará con el Usuario a través del correo electrónico o número de teléfono
                 proporcionado al contratar cualquier Servicio en la Plataforma Autocarehub.cl o al solicitar algún
                 Servicio por WhatsApp.
@@ -190,30 +248,36 @@
             <!-- Ops and Comunications End -->
 
             <!-- Platform Autocarehub.cl -->
-            <li style="margin: 40px 0 20px 0;"><strong style="text-transform: uppercase;">5. Plataforma
+            <li style="font-size: 18px; margin: 40px 0 20px 0;"><strong style="text-transform: uppercase;">5. Plataforma
                     Autocarehub.cl</strong></li>
-            <p>El sitio web www.autocarehub.cl es la plataforma para contratar los Servicios de la Empresa. Para
+            <p style="font-size: 18px; margin-right: 20px;">El sitio web www.autocarehub.cl es la plataforma para contratar los Servicios de
+                la Empresa. Para
                 contratar cualquier Servicio, el Usuario debe ingresar los datos solicitados en la Plataforma o por
                 WhatsApp.
             </p>
-            <p>El Usuario puede solicitar, reservar, programar y pagar cualquier Servicio a través de la Plataforma o
+            <p style="font-size: 18px; margin-right: 20px;">El Usuario puede solicitar, reservar, programar y pagar cualquier Servicio a
+                través de la Plataforma o
                 por WhatsApp. El uso de la Plataforma es gratuito y no requiere registro previo.</p>
-            <p>El pago a través de la Plataforma www.autocarehub.cl o WhatsApp es gratuito, pero el Usuario puede estar
+            <p style="font-size: 18px; margin-right: 20px;">El pago a través de la Plataforma www.autocarehub.cl o WhatsApp es gratuito,
+                pero el Usuario puede estar
                 sujeto a comisiones u otros cargos por parte de su banco por el uso de tarjetas de crédito u otros
                 medios de pago, de los cuales la Empresa no tiene control ni se hará responsable.
             </p>
             <!-- Platform Autocarehub.cl End -->
 
             <!-- Platform Autocarehub.cl Use -->
-            <li style="margin: 40px 0 20px 0;"><strong style="text-transform: uppercase;"> Uso de la plataforma</strong>
+            <li style="font-size: 18px; margin: 40px 0 20px 0;"><strong style="text-transform: uppercase;"> Uso de la
+                    plataforma</strong>
             </li>
-            <p>El derecho de uso de la propiedad intelectual de plataforma requiere el consentimiento expreso y por
+            <p style="font-size: 18px; margin-right: 20px;">El derecho de uso de la propiedad intelectual de plataforma requiere el
+                consentimiento expreso y por
                 escrito de la Empresa o de terceros propietarios de la propiedad intelectual contenida en Autocarehub.
                 El Usuario se compromete a no utilizar la plataforma con propósitos ilícitos o no autorizados.
             </p>
 
-            <li style="margin: 40px 0 20px 0;"><strong>Entre las obligaciones del Usuario se incluyen:</strong></li>
-            <ol type="a">
+            <li style="font-size: 18px; margin: 40px 0 20px 0; margin-right: 20px;"><strong>Entre las obligaciones del Usuario se
+                    incluyen:</strong></li>
+            <ol type="a" style="font-size: 18px; margin-right: 20px;">
                 <li>Abstenerse de utilizar sistemas automáticos, modificar la plataforma, distribuir su contenido sin
                     permiso, hackearla, enlazar partes de la plataforma, extraer datos sin autorización, utilizarla de
                     manera fraudulenta o asistir a terceros en el uso indebido de la misma.</li>
@@ -228,31 +292,63 @@
             </ol>
             <!-- Platform Autocarehub.cl Use End -->
 
-            <!-- Limitaciones de resposabilidad -->
-            <li style="margin: 40px 0 20px 0;"><strong style="text-transform: uppercase;">7. Limitaciones de
-                    resposabilidad</strong></li>
-            <p> La utilización de la Plataforma Autocarehub.cl es responsabilidad exclusiva del Usuario. Auto Carehub no
-                garantiza que la Plataforma Autocarehub.cl funcionará sin errores o estará libre de virus u otros
-                elementos perjudiciales.
-            </p>
-            <p>La Empresa no asume responsabilidad por errores, omisiones, o interrupciones temporales en la Plataforma
-                Autocarehub.cl. En ningún caso, la Empresa será responsable por daños derivados del acceso o uso de la
-                Plataforma Autocarehub.cl o de cualquier sitio web vinculado por el Usuario.</p>
-            <p>
-                Además, la Empresa no se responsabilizará de daños que estén fuera de su control razonable o que sean
-                resultado de fuerza mayor. Ni Auto Carehub 3000 SpA ni sus empresas afiliadas o asociadas, ni sus
-                ejecutivos, directores, empleados, asesores, accionistas, o agentes, serán responsables, contractual o
-                extracontractualmente, de cualquier tipo de pérdida o daño sufrido por el Usuario o terceros, ya sean
-                directos o indirectos, patrimoniales o extrapatrimoniales, especialmente por daños emergentes o lucro
-                cesante, cuyas causas no sean imputables a la Empresa.
-            </p>
+            <!-- Limitaciones de responsabilidad -->
+            <li style="font-size: 18px; margin: 40px 0 20px 0;"><strong style="text-transform: uppercase;">7.
+                    Limitaciones de
+                    responsabilidad</strong></li>
+            <ol type="a">
+                <li style="font-size: 18px; margin-right: 20px;"> La utilización de la <strong>Plataforma Autocarehub.cl</strong> es
+                    responsabilidad exclusiva del
+                    Usuario. Auto Carehub no garantiza que la <strong>Plataforma Autocarehub.cl</strong> funcionará sin
+                    errores o estará libre de virus u otros
+                    elementos perjudiciales.
+                </li>
+                <li style="font-size: 18px; margin-right: 20px;">La Empresa no asume responsabilidad por errores, omisiones, o
+                    interrupciones
+                    temporales en la <strong>Plataforma Autocarehub.cl</strong> En ningún caso, la Empresa será
+                    responsable por daños derivados del acceso o uso de la
+                    Plataforma Autocarehub.cl o de cualquier sitio web vinculado por el Usuario.
+                </li>
+                <li style="font-size: 18px; margin-right: 20px;">
+                    Además, la Empresa no se responsabilizará de <strong>daños que estén fuera de su control
+                        razonable</strong> o que sean
+                    resultado de <strong>fuerza mayor</strong>. Ni Auto Carehub 3000 SpA ni sus empresas afiliadas o
+                    asociadas, ni sus
+                    ejecutivos, directores, empleados, asesores, accionistas, o agentes, serán responsables,
+                    <strong>contractual o
+                        extracontractualmente</strong>, de cualquier tipo de pérdida o daño sufrido por el Usuario o
+                    terceros, ya sean
+                    directos o indirectos, <strong>patrimoniales o extrapatrimoniales</strong>, especialmente por daños
+                    emergentes o lucro
+                    cesante, cuyas causas no sean imputables a la Empresa.
+                </li>
+                <li style="font-size: 18px; margin-right: 20px;">Asimismo, el Usuario deberá asegurarse de retirar todos los efectos
+                    personales de valor del interior del
+                    vehículo antes de su entrega. Debido a que el vehículo pasa por manos de <strong>conductores,
+                        técnicos y
+                        terceros</strong>, Auto Carehub no se hace responsable por la <strong>pérdida o
+                        extravío</strong> de artículos sueltos dejados
+                    dentro del vehículo.
+                </li>
+                <li style="font-size: 18px; margin-right: 20px;">Por último, la Empresa únicamente se responsabiliza por los servicios que
+                    hayan sido contratados y
+                    pagados directamente a <strong>Auto Carehub 3000 SpA</strong>. No asumimos responsabilidad alguna
+                    por <strong>servicios o
+                        productos</strong> que se acuerden de manera personal entre el Usuario y cualquier promotor o
+                    colaborador que
+                    trabaje para nuestra compañía.</li>
+            </ol>
+
+
             <!-- Limitaciones de resposabilidad -->
 
             <!-- Enlaces a sitios Web de terceros -->
-            <li style="margin: 40px 0 20px 0;"><strong style="text-transform: uppercase;">8. Enlaces a sitios Web de
+            <li style="font-size: 18px; margin: 40px 0 20px 0; margin-right: 20px;"><strong style="text-transform: uppercase;">8. Enlaces a
+                    sitios Web de
                     terceros</strong>
             </li>
-            <p> La Plataforma Autocarehub.cl podría incluir enlaces a sitios web operados por proveedores de servicios
+            <p style="font-size: 18px; margin-right: 20px;"> La Plataforma Autocarehub.cl podría incluir enlaces a sitios web operados por
+                proveedores de servicios
                 terceros, independientes de Auto Carehub. Estos enlaces se proporcionan únicamente para referencia del
                 Usuario. La Empresa no controla dichos sitios web y no se responsabiliza por su contenido. La inclusión
                 de enlaces a estos sitios web en la Plataforma Autocarehub.cl no implica aprobación del material de los
@@ -260,9 +356,10 @@
             <!-- Enlaces a sitios Web de terceros End -->
 
             <!-- Derechos de Los Usuarios -->
-            <li style="margin: 40px 0 20px 0;"><strong style="text-transform: uppercase;">9. Derechos de Los
+            <li style="font-size: 18px; margin: 40px 0 20px 0;"><strong style="text-transform: uppercase;">9. Derechos
+                    de Los
                     Usuarios</strong></li>
-            <ol type="a">
+            <ol type="a" style="font-size: 18px; margin-right: 20px;">
                 <li><strong>Garantía legal.</strong>El Usuario tendrá derecho a ejercer los derechos previstos por la
                     Ley sobre
                     Protección de los Derechos de los Consumidores (Ley número 19.496) respecto a los Servicios
@@ -275,7 +372,8 @@
                     contratado sin penalización alguna, siempre que lo haga con al menos 3 horas de antelación a través
                     de nuestro WhatsApp. Las reprogramaciones realizadas con menos de 3 horas de antelación estarán
                     sujetas a las condiciones establecidas en el artículo 13 sobre política de cancelación.</li>
-                <p>El Usuario posee los derechos expresamente otorgados en estos Términos y Condiciones y en cualquier
+                <p style="font-size: 18px;">El Usuario posee los derechos expresamente otorgados en estos Términos y
+                    Condiciones y en cualquier
                     otra disposición relacionada con la prestación de los Servicios. El Usuario acepta no tomar
                     acciones, ni autorizar o incentivar a terceros a llevar a cabo acciones contrarias a lo establecido
                     anteriormente.</p>
@@ -283,21 +381,24 @@
             <!-- Derechos de Los Usuarios End -->
 
             <!-- Responsabilidad de Los Usuarios -->
-            <li style="margin: 40px 0 20px 0;"><strong style="text-transform: uppercase;">10. Responsabilidad de Los
+            <li style="font-size: 18px; margin: 40px 0 20px 0; margin-right: 20px;"><strong style="text-transform: uppercase;">10.
+                    Responsabilidad de Los
                     Usuarios</strong></li>
-            <ol type="a">
+            <ol type="a" style="font-size: 18px; margin-right: 20px;">
                 <li><strong>Información del Usuario.</strong>El Usuario es responsable de proporcionar información
                     precisa y completa al solicitar cualquier servicio, comprometiéndose a no utilizar información falsa
                     para contratar servicios.</li>
                 <li><strong>Disponibilidad y disposición para ejecutar el servicio.</strong> El Usuario debe revisar y
                     aceptar el presupuesto proporcionado antes de la realización de cualquier servicio.</li>
-                <li><strong>Aceptación de presupuesto.</strong>El usuario se compromete a revisar y aceptar el
+                <li><strong>Aceptación de presupuesto.</strong> El usuario se compromete a revisar y aceptar el
                     presupuesto proporcionado antes de la realización de cualquier servicio.</li>
-                <li>El cliente asume el consumo de bencina y a los peajes electrónicos (TAG) en los servicios que
+                <li><strong>Gastos Operativos.</strong> El cliente asume el consumo de bencina y a los peajes
+                    electrónicos (TAG) en los servicios que
                     requieran el traslado de su vehículo. En caso de que el vehículo no cuente con un dispositivo TAG
                     activo, el cliente deberá notificarlo por escrito antes de que se realice el servicio. </li>
                 <br>
-                <p>El incumplimiento de estos términos y condiciones, o de cualquier otro término relacionado con la
+                <p style="font-size: 18px;">El incumplimiento de estos términos y condiciones, o de cualquier otro
+                    término relacionado con la
                     prestación de servicios, conllevará la responsabilidad del Usuario por cualquier daño, perjuicio o
                     multa que pudiera generarse para la Empresa, debiendo indemnizarla por los daños y perjuicios, así
                     como reembolsar cualquier suma desembolsada como consecuencia del incumplimiento. Auto Carehub 3000
@@ -308,32 +409,33 @@
             <!-- Responsabilidad de Los Usuarios End -->
 
             <!-- Responsabilidad de la Empresa -->
-            <li style="margin: 40px 0 20px 0;"><strong style="text-transform: uppercase;">11. Responsabilidad de Los
+            <li style="font-size: 18px; margin: 40px 0 20px 0; margin-right: 20px;"><strong style="text-transform: uppercase;">11.
+                    Responsabilidad de Los
                     Usuarios</strong></li>
-            <ol type="a">
-                <li><strong>Cumplimiento de servicios contratados:</strong>La Empresa se compromete a realizar los
+            <ol type="a" style="font-size: 18px; margin-right: 20px;">
+                <li><strong>Cumplimiento de servicios contratados:</strong> La Empresa se compromete a realizar los
                     servicios solicitados con la máxima diligencia y profesionalismo.</li>
-
+                <br>
                 <li><strong>Tiempos:</strong> Aunque se estiman los tiempos de entrega y finalización de los servicios,
                     no se garantiza la finalización exacta debido a factores externos.</li>
-
+                <br>
                 <li><strong>Responsabilidad por daños vehiculares:</strong>Auto Carehub 3000 SpA cuenta con un seguro a
                     todo riesgo para los servicios que implican el traslado del vehículo, cubriendo cualquier daño
                     incluido en la póliza y hasta sus límites establecidos.</li>
 
-                <p>
+                <p style="font-size: 18px;">
                     Antes y después del servicio, se realizará una verificación del estado del vehículo, que deberá ser
                     firmada por el Usuario. Al recibir el vehículo, el Usuario libera a la Empresa de responsabilidad
                     por daños no reportados durante la verificación.
                 </p>
-                <li><strong>Garantía Auto Carehub:</strong>La Empresa ofrece una garantía limitada para los Servicios
+                <li><strong>Garantía Auto Carehub:</strong> La Empresa ofrece una garantía limitada para los Servicios
                     pagados, cuyos términos dependen del Servicio detallado en el comprobante correspondiente. Cualquier
                     incumplimiento de un Servicio pagado se remediará en un plazo de 10 días, ya sea mediante la
                     prestación del Servicio o mediante el reembolso de la cantidad pagada. La Empresa no se hace
                     responsable por daños indirectos, incidentales o consecuentes derivados del uso de los servicios.
                 </li>
-
-                <li><strong>Devoluciones de dinero:</strong>Las devoluciones por derechos del consumidor se realizarán
+                <br>
+                <li><strong>Devoluciones de dinero:</strong> Las devoluciones por derechos del consumidor se realizarán
                     por el mismo medio de pago utilizado para contratar los Servicios, o por otros medios acordados
                     entre la Empresa y el Usuario. Las políticas de cancelación establecidas en el documento
                     dictaminarán el procedimiento de devolución.</li>
@@ -341,43 +443,47 @@
             <!-- Responsabilidad de la Empresa End -->
 
             <!-- Publicacion de Imagenes -->
-            <li style="margin: 40px 0 20px 0;"><strong style="text-transform: uppercase;">12. Publicación de
+            <li style="font-size: 18px; margin: 40px 0 20px 0; margin-right: 20px;"><strong style="text-transform: uppercase;">12.
+                    Publicación de
                     Imágenes</strong></li>
-            <ol type="a">
-                <li>Nos reservamos el derecho de publicar una fotografía del vehículo del cliente exclusivamente con
-                    fines
-                    demostrativos. Esta publicación será de carácter temporal y se realizará con la patente del vehículo
-                    debidamente cubierta para proteger su privacidad. Apreciamos su comprensión y colaboración en este
-                    aspecto, ya que estas imágenes nos ayudan a ilustrar la calidad y alcance de nuestros servicios.
-                </li>
+            <p style="font-size: 18px; margin-right: 20px;">
+                Nos reservamos el derecho de publicar una fotografía del vehículo del cliente exclusivamente con
+                fines
+                demostrativos. Esta publicación será de carácter temporal y se realizará con la patente del vehículo
+                debidamente cubierta para proteger su privacidad. Agradesemos su comprensión y colaboración en este
+                aspecto, ya que estas imágenes nos ayudan a ilustrar la calidad y alcance de nuestros servicios.
+            </p>
+
             </ol>
             <!-- Precios y Formas de Pago -->
-            <li style="margin: 40px 0 20px 0;"><strong style="text-transform: uppercase;">13. Precios y Formas de
+            <li style="font-size: 18px; margin: 40px 0 20px 0; margin-right: 20px;"><strong style="text-transform: uppercase;">13. Precios y
+                    Formas de
                     Pago</strong></li>
-            <ol type="a">
-                <p>
+            <ol type="a" style=" margin-right: 20px;">
+                <li style="font-size: 18px;">
                     Los precios de los servicios se encuentran en pesos chilenos (CLP).
-                </p>
-                <p>
-                    Pago de Servicios: El usuario deberá completar los datos necesarios en la plataforma Autocarehub.cl
+                </li>
+                <li style="font-size: 18px;">
+                    El usuario deberá completar los datos necesarios en la plataforma Autocarehub.cl
                     y abonar a través de los proveedores de sistemas de pago integrados en la misma o vía WhatsApp,
                     previa aceptación de los Términos y Condiciones.
-                </p>
-                <p>
+                </li>
+                <li style="font-size: 18px;">
                     Los servicios de lavado de cualquier tipo y revisión técnica requieren un pago anticipado, mientras
                     que para los servicios de mantenimiento y gestión documental se precisa un adelanto del 50% del
                     monto acordado. El saldo restante se abonará al recibir el vehículo o al concluir el servicio, salvo
                     acuerdo previo en contrario.
-                </p>
+                </li>
             </ol>
             <!-- Precios y Formas de Pago End -->
 
             <!-- Política de Cancelación -->
-            <li style="margin: 40px 0 20px 0;"><strong style="text-transform: uppercase;">14. Política de
+            <li style="font-size: 18px; margin: 40px 0 20px 0;"><strong style="text-transform: uppercase;">14. Política
+                    de
                     Cancelación</strong></li>
-            <p>El usuario podrá cancelar un servicio bajo las siguientes condiciones:
+            <p style="font-size: 18px; margin-right: 20px;">El usuario podrá cancelar un servicio bajo las siguientes condiciones:
             </p>
-            <ol type="a">
+            <ol type="a" style="font-size: 18px; margin-right: 20px;">
                 <li>Si la cancelación se notifica con al menos 3 horas de antelación, se reembolsará el monto total sin
                     deducciones.</li>
                 <li>En caso de cancelación con menos de 3 horas de preaviso, se retendrán $15.000 por concepto de
@@ -390,13 +496,16 @@
                 </li>
             </ol>
             <!-- Politica de Cancelacion End -->
-            <!-- Ley Aplicable y Jusrisdicción -->
-            <li style="margin: 40px 0 20px 0;"><strong style="text-transform: uppercase;">15. Ley Aplicable y
-                    Jusrisdicción</strong></li>
-            <p>Estas disposiciones legales se encuentran regidas por las leyes de Chile, siendo cualquier controversia
+            <!-- Ley Aplicable y Jurisdicción -->
+            <li style="font-size: 18px; margin: 40px 0 20px 0; margin-right: 20px;"><strong style="text-transform: uppercase;">15. Ley
+                    Aplicable y
+                    Jurisdicción</strong></li>
+            <p style="font-size: 18px; margin-right: 20px;">Estas disposiciones legales se encuentran regidas por las leyes de Chile, siendo
+                cualquier controversia
                 relacionada sujeta a la jurisdicción exclusiva de los tribunales de Santiago, Región Metropolitana.
             </p>
-            <p>Para cualquier comentario, consulta o sugerencia acerca de estos Términos y Condiciones, le invitamos a
+            <p style="font-size: 18px; margin-right: 20px;">Para cualquier comentario, consulta o sugerencia acerca de estos Términos y
+                Condiciones, le invitamos a
                 ponerse en contacto a través de contacto@autocarehub.com.</p>
         </ul>
     </div>
@@ -407,9 +516,9 @@
         style="background-image: url('img/fiber_carbon_dark_mesh.jpg')">
         <div class="container py-5">
             <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 ">
                     <h4 class="text-light mb-4" style="filter: brightness(100%) !important">Contáctenos</h4>
-                    <a href="https://wa.me/+56986870079" style="color: white" target="_blank">
+                    <a href="href=" tel:+56986870079" style="color: white" target="_blank">
                         <img src="../img/telefono_icono_white.png" style="width: 30px">
                         +56 9 8687 0079
                     </a>
@@ -429,59 +538,67 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 ">
                     <h4 class="text-light mb-4">Horarios</h4>
                     <h6 class="text-light">Lunes - Viernes:</h6>
                     <p class="mb-4">09:00 - 19:00</p>
                     <h6 class="text-light">Sábado:</h6>
                     <p class="mb-0">09:00 - 14:00</p>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 ">
                     <h4 class="text-light mb-4">Servicios</h4>
-                    <a class="btn btn-link" href="">Gestión de Revisión Técnica y Documentación</a>
-                    <a class="btn btn-link" href="">Mecánica Ligera</a>
-                    <a class="btn btn-link" href="">Cambio de Aceite</a>
-                    <a class="btn btn-link" href="">Parabrisas</a>
-                    <a class="btn btn-link" href="">Papel Polarizado y Seguridad</a>
-                    <a class="btn btn-link" href="">Electroauto y Sistema de Seguridad</a>
+                    <a class="btn btn-link" href="documentation.html">Gestión de Revisión
+                        Técnica y Documentación</a>
+                    <a class="btn btn-link" href="mechanic.html">Mecánica Ligera</a>
+                    <a class="btn btn-link" href="mechanic.html#aceite">Cambio de Aceite</a>
+                    <a class="btn btn-link" href="mechanic.html#parabrisa">Parabrisas</a>
+                    <a class="btn btn-link" href="mechanic.html#paperglass">Papel Polarizado y
+                        Seguridad</a>
+                    <a class="btn btn-link" href="electrocar.html">Electroauto y Sistema de
+                        Seguridad</a>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 ">
                     <h4 class="text-light mb-4">Políticas</h4>
-                    <a class="btn btn-link" href="term_and_cond.html">Términos y Condiciones</a>
+                    <a class="btn btn-link" href="term_and_cond.html">Términos y
+                        Condiciones</a>
                     <a class="btn btn-link" href="privacity.html">De Privacidad</a>
-                    <!-- Contador de visitas -->
-                    <div style="display: flex; position: relative; width: 400px; height: 400px;">
-                        <!-- Imagen del tacómetro detrás -->
-                        <div style="position: relative; width: 300px; height: 400px;">
-                            <!-- Imagen del tacómetro detrás -->
-                            <img src="img/tacometro.png" 
-                                 style="position: absolute; top: 0; left: 0; width: 100%; z-index: 1;" alt="tacometro">
-                            <!-- Imagen del contador de visitas encima del tacómetro -->
-                            <img src="https://www.web-counter.net/count_20091204.php?c=yrKHilxvgwb" 
-                                 style="position: absolute; top: 38%; left: 25%; width: 75px; z-index: 2;" alt="contador de visitas">
-                        </div>
-                    <!-- Fin Contador de visitas -->                    
-
-
                 </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">www.autocarhub.cl</a>, Todos los derechos
-                        reservados@2024.
-                        by <a class="border-bottom" href="https://github.com/RDLuisL" target="_blank"
-                            style="text-decoration: none !important;"> <img src="img/lluna_sign_white.png" alt="RDLuisL"
-                                style="height: 50px; text-decoration: none !important;"> </a>
+                <!-- Contador de visitas -->
+                <div style="display: flex; position: relative; width: 400px; height: 400px; margin-bottom: -150px;">
+                    <!-- Imagen del tacómetro detrás -->
+                    <div style="position: relative; width: 300px; height: 400px;">
+                        <!-- Imagen del tacómetro detrás -->
+                        <img src="img/tacometro.png"
+                            style="position: absolute; top: 0; left: 0; width: 100%; z-index: 1;" alt="tacometro">
+                        <!-- Imagen del contador de vehiculos encima del tacómetro -->
+                        <img src="https://i.postimg.cc/dtYX4NZN/vehiculos.png"
+                            style="position: absolute; top: 19%; left: 28%; width: 37px; z-index: 4;"
+                            alt="contador de vehiculos">
+                        <!-- Imagen del contador de visitas encima del tacómetro -->
+                        <img src="https://www.web-counter.net/count_20091204.php?c=yrKHilxvgwb"
+                            style="position: absolute; top: 38%; left: 25%; width: 75px; z-index: 2;"
+                            alt="contador de visitas">
                     </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <div class="footer-menu">
-                            <a href="">Inicio</a>
-                            <a href="">Cookies</a>
-                            <a href="faqs.html">Preguntas Frecuentes</a>
+                </div>
+                <!-- Fin Contador de visitas -->
+            </div>
+
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class=" text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">www.autocarhub.cl</a>, Todos los derechos
+                            reservados@2024.
+                            by <a class="border-bottom" href="https://github.com/RDLuisL" target="_blank"
+                                style="text-decoration: none !important;"> <img src="img/lluna_sign_white.png"
+                                    alt="RDLuisL" style="height: 50px; text-decoration: none !important;"> </a>
+                        </div>
+                        <div class=" text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="http://www.autocarehub.cl/">Inicio</a>
+                                <a href="http://www.autocarehub.cl/cookies.html">Cookies</a>
+                                <a href="http://www.autocarehub.cl/faqs.html">Preguntas Frecuentes</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -490,66 +607,35 @@
     </div>
     <!-- Footer End -->
 
-    <!-- Back to Top -->
-    <a href="#" id="backToTop" class="btn btn-lg btn-primary btn-lg-square back-to-top"
-        style="border: none; border-radius: 5px; background-color: #DDDC2A; color: #303E74;">
-        <i class="bi bi-arrow-up"></i>
-    </a>
-    <!-- Back to Top End -->
-    <!-- Backtop script -->
-    <script>
-        document.getElementById("backToTop").addEventListener("click", function (event) {
-            event.preventDefault(); // Evita que el enlace siga el comportamiento predeterminado
-            window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplazamiento suave hacia arriba
-        });
-    </script>
-    <!-- Backtop script End -->
-
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-
-    <!-- Script to Setup Calendar to DD/MM/YY -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/js/tempusdominus-bootstrap-4.min.js"></script>
-    <script>
-        const toggles = document.querySelectorAll('.faq-toggle');
-
-        toggles.forEach(toggle => {
-            toggle.addEventListener('click', () => {
-                toggle.parentNode.classList.toggle('active');
+        <!-- Backtop script -->
+        <script>
+            document.getElementById("backToTop").addEventListener("click", function (event) {
+                event.preventDefault(); // Evita que el enlace siga el comportamiento predeterminado
+                window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplazamiento suave hacia arriba
             });
-        });
+        </script>
+        <!-- Backtop script End -->
 
-        // SOCIAL PANEL JS
-        const floating_btn = document.querySelector('.floating-btn');
-        const close_btn = document.querySelector('.close-btn');
-        const social_panel_container = document.querySelector('.social-panel-container');
 
-        floating_btn.addEventListener('click', () => {
-            social_panel_container.classList.toggle('visible')
-        });
-
-        close_btn.addEventListener('click', () => {
-            social_panel_container.classList.remove('visible')
-        });
-    </script>
-    <!-- Script to Setup Calendar to DD/MM/YY End-->
-
-    <!-- Script para corregir el calendario -->
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/tempusdominus/js/moment.min.js"></script>
+        <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+        <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+        <script src="lib/whatsapp.js"></script>
+        <script src="lib/whatsapp2.js"></script>
+        <script src="/lib/spinner.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="/lib/backtop.js"></script>
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <!-- JavaScript Libraries End -->
 </body>
 
 </html>

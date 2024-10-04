@@ -1,0 +1,87 @@
+/* Logo Slider */
+
+#logo-slider {
+	-webkit-box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.125);
+	box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.125);
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+#logo-slider::before, #logo-slider::after {
+	background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
+	background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+	content: "";
+	height: 175px;
+	position: absolute;
+	width: 200px;
+	z-index: 2;
+}
+
+#logoSlide {
+    width: 100px;
+    display: flex; 
+    align-items: center;
+}
+
+#logoSlide img {
+    width: 100px;
+    margin: 0 20px 0 20px;
+}
+
+
+#logo-slider::after {
+	right: 0;
+	top: 0;
+	-webkit-transform: rotateZ(180deg);
+	transform: rotateZ(180deg);
+}
+
+
+
+#logo-slider::before {
+	left: 0;
+	top: 0;
+}
+
+#logo-slider #logo-slide-track {
+	-webkit-animation: logo-scroll 10s linear infinite;
+	animation: logo-scroll 10s linear infinite;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: calc(50px * 25);
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+}
+
+#logo-slider #logoSlide {
+	height: 150px;
+	width: 250px;
+	padding: 20px;
+}
+
+@-webkit-keyframes logo-scroll {
+	0% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+	100% {
+		-webkit-transform: translateX(calc(-250px * 26));
+		transform: translateX(calc(-250px * 14));
+	}
+}
+
+@keyframes logo-scroll {
+	0% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+	100% {
+		-webkit-transform: translateX(calc(-250px * 14));
+		transform: translateX(calc(-250px * 14));
+	}
+}

@@ -53,7 +53,7 @@
         <div class="row gx-0 d-none d-lg-flex">
             <div class="col-lg-7 px-5 text-start">
                 <div class="h-100 d-inline-flex align-items-center py-0">
-                    <img src="../img/reloj.png" style="width: 20px; #303E74">
+                    <img src="../img/reloj.png" style="width: 20px; color: #303E74">
                     <small class="ps-2">Lun - Vie : 09:00 - 19:00, Sáb : 09:00 AM - 14:00</small>
                 </div>
             </div>
@@ -81,7 +81,7 @@
     </div>
     <!-- Topbar End -->
 
-    <!-- Navbar Start -->
+    <!-- Navbar Start ✔️-->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <h2 class="m-0 text-primary" style="color: #303E74 !important">
@@ -95,23 +95,21 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.html" class="nav-item nav-link active">Inicio</a>
-                <a href="about.html" class="nav-item nav-link">Acerca de Nosotros</a>
+                <a href="gallery.html" class="nav-item nav-link">Galeria</a>
+                <a href="about.html" class="nav-item nav-link">Nosotros</a>
                 <a href="contact.html" class="nav-item nav-link">Contáctanos</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Servicios</a>
                     <div class="dropdown-menu fade-up m-0">
-                        <a href="documentation.html#revision-tecnica" class="dropdown-item">Gestión de Revisión Técnica
-                            y otra
-                            Documentación</a>
-                        <a href="mechanic.html#mecanica" class="dropdown-item">Mecánica Ligera</a>
-                        <a href="wash_detailing.html#wash" class="dropdown-item">Lavado Ecológico de Autos y Detailing a
-                            Domicilio</a>
-                        <a href="mechanic.html#aceite" class="dropdown-item">Cambio de Aceite y Filtros</a>
+                        <a href="documentation.html" class="dropdown-item">Documentos del Vehículo</a>
+                        <a href="mechanic.html" class="dropdown-item">Mantención del Vehiculo</a>
+                        <a href="wash_detailing.html" class="dropdown-item">Limpieza del Interior y Exterior del Vehículo</a>
                         <a href="electrocar.html#parabrisa" class="dropdown-item">Reparación y Cambio de Parabrisas</a>
                         <a href="electrocar.html#paperglass" class="dropdown-item">Papel Polarizado y de Seguridad</a>
                         <a href="electrocar.html#currentcut" class="dropdown-item">Electroauto y Sistemas de
                             Seguridad</a>
                         <a href="wash_detailing.html#painting" class="dropdown-item">Latonería y Pintura</a>
+                        <a href="mechanic.html#lavado_engrase" class="dropdown-item">Lavado Motor, Chasis y Engrase</a>
                     </div>
                 </div>
                 <a href="faqs.html" class="nav-item nav-link">Preguntas Frecuentes</a>
@@ -134,10 +132,7 @@
                         <div class="container">
                             <div class="row align-items-center justify-content-center justify-content-lg-start">
                                 <div class="col-10 col-lg-7 text-center text-lg-start">
-                                    <h6 class="text-white text-uppercase mb-3 animated slideInDown"><img
-                                            src="img/race_flag_icon_white.png"
-                                            style="width: 40px; margin-right: 10px;">Brillando en cada detalle<img
-                                            src="img/race_flag_icon_white.png" style="width: 40px; margin-left: 10px;">
+                                    <h6 class="text-white text-uppercase mb-3 animated slideInDown">// BRILLANDO EN CADA DETALLE//
                                     </h6>
                                     <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">Lavado Ecológico a
                                         Domicilio: Profesional y Sustentable</h1>
@@ -161,10 +156,7 @@
                         <div class="container">
                             <div class="row align-items-center justify-content-center justify-content-lg-start">
                                 <div class="col-10 col-lg-7 text-center text-lg-start">
-                                    <h6 class="text-white text-uppercase mb-3 animated slideInDown"><img
-                                            src="img/race_flag_icon_white.png"
-                                            style="width: 40px; margin-right: 10px;">Brillando en cada detalle<img
-                                            src="img/race_flag_icon_white.png" style="width: 40px; margin-left: 10px;">
+                                    <h6 class="text-white text-uppercase mb-3 animated slideInDown">// BRILLANDO EN CADA DETALLE//
                                     </h6>
                                     <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">Detailing:
                                         Perfección que Deja Tu Vehículo como Nuevo</h1>
@@ -188,10 +180,7 @@
                         <div class="container">
                             <div class="row align-items-center justify-content-center justify-content-lg-start">
                                 <div class="col-10 col-lg-7 text-center text-lg-start">
-                                    <h6 class="text-white text-uppercase mb-3 animated slideInDown"><img
-                                            src="img/race_flag_icon_white.png"
-                                            style="width: 40px; margin-right: 10px;">Brillando en cada detalle<img
-                                            src="img/race_flag_icon_white.png" style="width: 40px; margin-left: 10px;">
+                                    <h6 class="text-white text-uppercase mb-3 animated slideInDown">// BRILLANDO EN CADA DETALLE//
                                     </h6>
                                     <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">Latonería y Pintura:
                                         Renueva la Belleza de tu Vehículo</h1>
@@ -221,27 +210,34 @@
     </div>
     <!-- Carousel End -->
 
+    <!-- Back to Top -->
+    <a href="#" id="backToTop" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+        style="border: none; border-radius: 5px; background-color: #DDDC2A; color: #303E74;">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+    <!-- Back to Top End -->
+
     <!-- Services Start -->
     <div class="container-fluid service bg-light py-5">
         <div class="container py-5">
             <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                <p class="text-uppercase text-secondary fs-5 mb-0"><img src="img/race_flag_icon.png"
-                        style="width: 40px;">Brillando en cada detalle <img src="img/race_flag_icon.png"
-                        style="width: 40px;"></p>
-                <h2 class="display-4 text-capitalize mb-3" id="wash">Limpieza, Pulitura y Detailing</h2>
+                <p class="text-uppercase text-secondary mb-0" style="font-size: 15px;"><img src="img/race_flag_icon.png"
+                        style="width: 40px;" class="me-2">Brillando en cada detalle <img src="img/race_flag_icon.png"
+                        style="width: 40px;" class="ms-2"></p>
+                <h3 class="display-4 text-capitalize mb-3" id="wash">Limpieza, Pulitura y Detailing</h3>
                 <h5>Cuida y realza cada detalle de tu vehículo con nuestros servicios de limpieza, pulitura y detailing.
                     Ofrecemos conveniencia y calidad profesional en cada visita, garantizando satisfacción y un acabado
                     impecable, ya sea en tu trabajo o en casa.</h5>
             </div>
             <div class="row g-4">
-                <!-- Eco Wash at Home First Card -->
-                <div class="col-lg-4 wow fadeInUp" id="revision-tecnica" data-wow-delay="0.2s">
+                <!-- First Eco Wash at Home Card -->
+                <div class="col-lg-4 wow fadeInUp" id="eco-wash" data-wow-delay="0.2s">
                     <div class="service-item">
                         <div class="service-img">
-                            <img src="img/car_wash_500x600.png" class="img-fluid w-100" alt="Image"
+                            <img src="img/eco_clean_car_500x900.png" class="img-fluid w-100" alt="Image"
                                 style="border-radius: 20px;" id="ecowash">
                         </div>
-                        <div class="service-content text-center p-4">
+                        <div class="service-content text-center ps-2 pe-4">
 
                             <!-- Modal Prices -->
                             <div class="modal-frame">
@@ -264,7 +260,7 @@
                             </div>
                             <div class="modal-overlay"></div>
                             <button class="fancy-btn open rounded-pill"
-                                style="border: none ; background-color: #303E74; color: #DDDC2A  !important">Precios</button>
+                                style="border: none ; margin-bottom: -15px; background-color: #303E74; color: #DDDC2A  !important">Precios</button>
                             <!-- Modal Prices END-->
 
                             <h4 class="d-block fs-4 text-white">
@@ -288,7 +284,7 @@
                             <a class="btn btn-secondary py-2 px-4 rounded-pill" href="sched-ecowash.html"
                                 target="_blank"
                                 style="border: none; background-color: #303E74; color: #DDDC2A !important;">
-                                Agende aquí<img src="img/calendly_icon_white.png"
+                                Agende aquí<img src="img/calendar_icon.png"
                                     style="width: 25px; margin-left: 10px;">
                             </a>
                         </div>
@@ -303,18 +299,16 @@
                         </div>
                     </div>
                 </div>
-                <!-- Eco Wash at Home First Card End -->
+                <!-- First Eco Wash at Home Card End -->
 
-                <!-- Full Wash Second Card -->
+                <!-- Second Full Wash Second Card -->
                 <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s" id="fullwash">
                     <div class="service-item">
                         <div class="service-img">
-                            <img src="img/full_wash.jpg" class="img-fluid w-100" alt="Image"
+                            <img src="img/wash_car_500x900.png" class="img-fluid w-100" alt="Image"
                                 style="border-radius: 20px;">
                         </div>
                         <div class="service-content text-center p-4">
-
-
                             <!-- Modal Prices -->
                             <div class="modal-frame">
                                 <div class="modal">
@@ -358,7 +352,7 @@
                             <a class="btn btn-secondary py-2 px-4 rounded-pill" href="sched-full-wash.html"
                                 target="_blank"
                                 style="border: none; background-color: #303E74; color: #DDDC2A !important;">
-                                Agende aquí<img src="img/calendly_icon_white.png"
+                                Agende aquí<img src="img/calendar_icon.png"
                                     style="width: 25px; margin-left: 10px;">
                             </a>
                         </div>
@@ -372,13 +366,13 @@
                         </div>
                     </div>
                 </div>
-                <!-- Full Wash Second Card End -->
+                <!-- Second Full Wash Card End -->
 
-                <!-- Detailing Interior Third Card -->
+                <!-- Third Detailing Interior Third Card -->
                 <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.6s" id="detailing">
                     <div class="service-item">
                         <div class="service-img">
-                            <img src="img/detailing_before_after.png" class="img-fluid w-100" alt="Image"
+                            <img src="img/detailing_500x900.png  " class="img-fluid w-100" alt="Image"
                                 style="border-radius: 20px;" id="detailing">
                         </div>
                         <div class="service-content text-center p-2">
@@ -425,7 +419,7 @@
                             <a class="btn btn-secondary py-2 px-4 rounded-pill" href="sched-ecowash.html"
                                 target="_blank"
                                 style="border: none; background-color: #303E74; color: #DDDC2A !important;">
-                                Agende aquí<img src="img/calendly_icon_white.png"
+                                Agende aquí<img src="img/calendar_icon.png"
                                     style="width: 25px; margin-left: 10px;">
                             </a>
                         </div>
@@ -439,13 +433,13 @@
                         </div>
                     </div>
                 </div>
-                <!-- Detailing Third Card End -->
+                <!-- Third Detailing Card End -->
 
-                <!-- Detailing Exterior Fourth Card -->
+                <!-- Fourth Detailing Exterior Card -->
                 <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.7s" id="polishing">
                     <div class="service-item">
                         <div class="service-img">
-                            <img src="img/polish.png" class="img-fluid w-100" alt="Image" style="border-radius: 20px;">
+                            <img src="img/polish_before_afte_500x900.jpg" class="img-fluid w-100" alt="Image" style="border-radius: 20px;">
                         </div>
                         <div class="service-content text-center p-2">
 
@@ -488,7 +482,7 @@
                             <a class="btn btn-secondary py-2 px-4 rounded-pill" href="sched-ecowash.html"
                                 target="_blank"
                                 style="border: none; background-color: #303E74; color: #DDDC2A !important;">
-                                Agende aquí<img src="img/calendly_icon_white.png"
+                                Agende aquí<img src="img/calendar_icon.png"
                                     style="width: 25px; margin-left: 10px;">
                             </a>
                         </div>
@@ -502,13 +496,13 @@
                         </div>
                     </div>
                 </div>
-                <!-- Detailing Exterior Card End -->
+                <!-- Fourth Detailing Exterior Card End -->
 
-                <!-- Detailing Total Third Card -->
+                <!-- Fifth Detailing Total Card -->
                 <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.6s" id="detailing">
                     <div class="service-item">
                         <div class="service-img">
-                            <img src="img/detaillin_500x600.png" class="img-fluid w-100" alt="Image"
+                            <img src="img/detailing_500x900.png" class="img-fluid w-100" alt="Image"
                                 style="border-radius: 20px;" id="detailing">
                         </div>
                         <div class="service-content text-center p-2">
@@ -551,7 +545,7 @@
                             <a class="btn btn-secondary py-2 px-4 rounded-pill" href="sched-ecowash.html"
                                 target="_blank"
                                 style="border: none; background-color: #303E74; color: #DDDC2A !important;">
-                                Agende aquí<img src="img/calendly_icon_white.png"
+                                Agende aquí<img src="img/calendar_icon.png"
                                     style="width: 25px; margin-left: 10px;">
                             </a>
                         </div>
@@ -571,7 +565,7 @@
                 <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.9s" id="painting">
                     <div class="service-item">
                         <div class="service-img">
-                            <img src="img/paint_car_500x600.png" class="img-fluid w-100" alt="Image"
+                            <img src="img/paint_car_500x900.png" class="img-fluid w-100" alt="Image"
                                 style="border-radius: 20px;">
                         </div>
                         <div class="service-content text-center p-2">
@@ -625,14 +619,14 @@
     </div>
     <!-- Services End -->
     |
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="1s"
+    <!-- Footer Start ✔️-->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s"
         style="background-image: url('img/fiber_carbon_dark_mesh.jpg')">
         <div class="container py-5">
             <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 ">
                     <h4 class="text-light mb-4" style="filter: brightness(100%) !important">Contáctenos</h4>
-                    <a href="https://wa.me/+56986870079" style="color: white" target="_blank">
+                    <a href="href=" tel:+56986870079" style="color: white" target="_blank">
                         <img src="../img/telefono_icono_white.png" style="width: 30px">
                         +56 9 8687 0079
                     </a>
@@ -652,45 +646,67 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 ">
                     <h4 class="text-light mb-4">Horarios</h4>
                     <h6 class="text-light">Lunes - Viernes:</h6>
                     <p class="mb-4">09:00 - 19:00</p>
                     <h6 class="text-light">Sábado:</h6>
                     <p class="mb-0">09:00 - 14:00</p>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 ">
                     <h4 class="text-light mb-4">Servicios</h4>
-                    <a class="btn btn-link" href="">Gestión de Revisión Técnica y Documentación</a>
-                    <a class="btn btn-link" href="">Mecánica Ligera</a>
-                    <a class="btn btn-link" href="">Cambio de Aceite</a>
-                    <a class="btn btn-link" href="">Parabrisas</a>
-                    <a class="btn btn-link" href="">Papel Polarizado y Seguridad</a>
-                    <a class="btn btn-link" href="">Electroauto y Sistema de Seguridad</a>
+                    <a class="btn btn-link" href="documentation.html">Gestión de Revisión
+                        Técnica y Documentación</a>
+                    <a class="btn btn-link" href="mechanic.html">Mecánica Ligera</a>
+                    <a class="btn btn-link" href="mechanic.html#aceite">Cambio de Aceite</a>
+                    <a class="btn btn-link" href="mechanic.html#parabrisa">Parabrisas</a>
+                    <a class="btn btn-link" href="mechanic.html#paperglass">Papel Polarizado y
+                        Seguridad</a>
+                    <a class="btn btn-link" href="electrocar.html">Electroauto y Sistema de
+                        Seguridad</a>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 ">
                     <h4 class="text-light mb-4">Políticas</h4>
-                    <a class="btn btn-link" href="term_and_cond.html">Términos y Condiciones</a>
+                    <a class="btn btn-link" href="term_and_cond.html">Términos y
+                        Condiciones</a>
                     <a class="btn btn-link" href="privacity.html">De Privacidad</a>
                 </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">www.autocarhub.cl</a>, Todos los derechos
-                        reservados@2024.
-                        by <a class="border-bottom" href="https://github.com/RDLuisL" target="_blank"
-                            style="text-decoration: none !important;"> <img src="img/lluna_sign_white.png" alt="RDLuisL"
-                                style="height: 50px; text-decoration: none !important;"> </a>
+                <!-- Contador de visitas -->
+                <div style="display: flex; position: relative; width: 400px; height: 400px; margin-bottom: -150px;">
+                    <!-- Imagen del tacómetro detrás -->
+                    <div style="position: relative; width: 300px; height: 400px;">
+                        <!-- Imagen del tacómetro detrás -->
+                        <img src="img/tacometro.png"
+                            style="position: absolute; top: 0; left: 0; width: 100%; z-index: 1;" alt="tacometro">
+                        <!-- Imagen del contador de vehiculos encima del tacómetro -->
+                        <img src="https://i.postimg.cc/dtYX4NZN/vehiculos.png"
+                            style="position: absolute; top: 19%; left: 28%; width: 37px; z-index: 4;"
+                            alt="contador de vehiculos">
+                        <!-- Imagen del contador de visitas encima del tacómetro -->
+                        <img src="https://www.web-counter.net/count_20091204.php?c=yrKHilxvgwb"
+                            style="position: absolute; top: 38%; left: 25%; width: 75px; z-index: 2;"
+                            alt="contador de visitas">
                     </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <div class="footer-menu">
-                            <a href="">Inicio</a>
-                            <a href="">Cookies</a>
-                            <a href="faqs.html">Preguntas Frecuentes</a>
+                    <!-- Fin Contador de visitas -->
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class=" text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">www.autocarhub.cl</a>, Todos los derechos
+                            reservados@2024.
+                            by <a class="border-bottom" href="https://github.com/RDLuisL" target="_blank"
+                                style="text-decoration: none !important;"> <img src="img/lluna_sign_white.png"
+                                    alt="RDLuisL" style="height: 50px; text-decoration: none !important;"> </a>
+                        </div>
+                        <div class=" text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="index.html">Inicio</a>
+                                <a href="cookies.html">Cookies</a>
+                                <a href="faqs.html">Preguntas Frecuentes</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -699,61 +715,24 @@
     </div>
     <!-- Footer End -->
 
-
-    <!-- Back to Top -->
-    <a href="#" id="backToTop" class="btn btn-lg btn-primary btn-lg-square back-to-top"
-        style="border: none; border-radius: 5px; background-color: #DDDC2A; color: #303E74;">
-        <i class="bi bi-arrow-up"></i>
-    </a>
-    <!-- Back to Top End -->
-    <!-- Backtop script -->
-    <script>
-        document.getElementById("backToTop").addEventListener("click", function (event) {
-            event.preventDefault(); // Evita que el enlace siga el comportamiento predeterminado
-            window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplazamiento suave hacia arriba
-        });
-    </script>
-    <!-- Backtop script End -->
-    <!-- Backtop script -->
-    <script>
-        document.getElementById("backToTop").addEventListener("click", function (event) {
-            event.preventDefault(); // Evita que el enlace siga el comportamiento predeterminado
-            window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplazamiento suave hacia arriba
-        });
-    </script>
-    <!-- Backtop script End -->
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-    <script src="lib/modal_prices.js"></script>
-    <script src="lib/whatsapp2.js"></script>
-
-    <!-- Script to Setup Calendar to DD/MM/YY -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/js/tempusdominus-bootstrap-4.min.js"></script>
-    <script>
-        $(function () {
-            $('#date1').datetimepicker({
-                format: 'DD/MM/YYYY'
-            });
-        });
-    </script>
-    <!-- Script to Setup Calendar to DD/MM/YY End-->
-
-    <!-- Script para corregir el calendario -->
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+          <!-- JavaScript Libraries -->
+          <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+          <script src="lib/wow/wow.min.js"></script>
+          <script src="lib/easing/easing.min.js"></script>
+          <script src="lib/waypoints/waypoints.min.js"></script>
+          <script src="lib/counterup/counterup.min.js"></script>
+          <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+          <script src="lib/tempusdominus/js/moment.min.js"></script>
+          <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+          <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+          <script src="/lib/spinner.js"></script>
+          <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+          <script src="/lib/backtop.js"></script>
+          <script src="/lib/modal_prices.js"></script>
+          <!-- No Swanging Code Script -->
+          <!-- Template Javascript -->
+          <script src="js/main.js"></script>
+          <!-- JavaScript Libraries End -->
 </body>
-
 </html>
