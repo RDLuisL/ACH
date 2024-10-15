@@ -38,6 +38,7 @@
     bottom: 45px;
     z-index: 99;
 }
+
 /*** Spinner ***/
 #spinner {
     opacity: 0;
