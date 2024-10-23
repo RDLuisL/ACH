@@ -106,7 +106,7 @@
 .navbar-light .navbar-nav .nav-link.active {
     color: var(--primary);
 }
-@media (max-width: 991.98px) {
+@media (max-width: 576px) {
     .navbar-light .navbar-nav .nav-link  {
         margin-right: 0;
         padding: 10px 0;
@@ -127,7 +127,7 @@
     top: -100px;
     transition: .5s;
 }
-@media (min-width: 992px) {
+@media (min-width: 576px) {
     .navbar .nav-item .dropdown-menu {
         display: block;
         border: none;
@@ -163,7 +163,7 @@
     width: 3rem;
     height: 3rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 576px) {
     #header-carousel .carousel-item {
         position: relative;
         min-height: 450px;

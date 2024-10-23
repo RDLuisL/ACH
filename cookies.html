@@ -49,31 +49,19 @@
     <!-- Spinner End -->
 
     <!-- Topbar Start -->
-    <div class="container-fluid bg-light p-0" style="height: 50px;">
-        <div class="row gx-0 d-none d-lg-flex">
-            <div class="col-lg-7 px-5 text-start">
-                <div class="h-100 d-inline-flex align-items-center py-0">
-                    <img src="../img/reloj.png" style="width: 20px; color: #303E74">
+    <div class="container-fluid bg-light p-0">
+        <div class="row gx-0">
+            <div class="col-12 col-lg-7 px-3 px-lg-5 text-start text-nowrap">
+                <div class="h-100 d-inline-flex align-items-center py-2">
+                    <img src="../img/reloj.png" class="img-fluid" style="max-width: 20px;">
                     <small class="ps-2">Lun - Vie : 09:00 - 19:00, Sáb : 09:00 AM - 14:00</small>
                 </div>
             </div>
-            <div class="col-lg-5 px-5 text-end">
-                <div class="h-100 d-inline-flex align-items-center py-0 me-4">
+            <div class="col-12 col-lg-5 px-3 px-lg-5 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center py-2 me-0 me-lg-4">
                     <a href="https://wa.me/+56986870079" style="color: #303E74" target="_blank">
-                        <img src="../img/telefono_icono.png" style="width: 20px">
+                        <img src="../img/telefono_icono.png" class="img-fluid" style="max-width: 20px;"> 
                         +56 9 8687 0079
-                    </a>
-
-                </div>
-                <div class="h-100 d-inline-flex align-items-center">
-                    <a href="https://www.instagram.com/autocarehub.cl?igsh=MWRtdm5iNWp0ZHptcw==" target="_blank">
-                        <img src="../img/instagram_icono.png" style="width: 20px" class="m-2" />
-                    </a>
-                    <a href="">
-                        <img src="../img/facebook_icono.png" style="width: 20px" class="m-2" />
-                    </a>
-                    <a href="">
-                        <img src="../img/linkedin.png" style="width: 20px" class="m-2" />
                     </a>
                 </div>
             </div>
@@ -81,7 +69,7 @@
     </div>
     <!-- Topbar End -->
 
-    <!-- Navbar Start -->
+    <!-- Navbar Start ✔️-->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <h2 class="m-0 text-primary" style="color: #303E74 !important">
@@ -89,9 +77,10 @@
                 Auto Carehub
             </h2>
         </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+        
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.html" class="nav-item nav-link active">Inicio</a>
@@ -101,13 +90,9 @@
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Servicios</a>
                     <div class="dropdown-menu fade-up m-0">
-                        <a href="documentation.html#revision-tecnica" class="dropdown-item">Gestión de Revisión Técnica
-                            y otra
-                            Documentación</a>
-                        <a href="mechanic.html" class="dropdown-item">Mecánica Ligera</a>
-                        <a href="wash_detailing.html#wash" class="dropdown-item">Lavado Ecológico de Autos y Detailing a
-                            Domicilio</a>
-                        <a href="mechanic.html#aceite" class="dropdown-item">Cambio de Aceite y Filtros</a>
+                        <a href="documentation.html" class="dropdown-item">Documentos del Vehículo</a>
+                        <a href="mechanic.html" class="dropdown-item">Mantención del Vehiculo</a>
+                        <a href="wash_detailing.html" class="dropdown-item">Limpieza del Interior y Exterior del Vehículo</a>
                         <a href="electrocar.html#parabrisa" class="dropdown-item">Reparación y Cambio de Parabrisas</a>
                         <a href="electrocar.html#paperglass" class="dropdown-item">Papel Polarizado y de Seguridad</a>
                         <a href="electrocar.html#currentcut" class="dropdown-item">Electroauto y Sistemas de
@@ -131,7 +116,7 @@
             Cookies en la Plataforma de Auto Carehub 3000 SPA</h2>
         
 
-        <ol style="list-style-type: none; text-align: justify; margin: 40px 0 20px 0;">
+        <ol style="list-style-type: none; text-align: justify; margin: 40px 0 20px 0;" class="me-4">
             <!-- Generalidades -->
             <li type="1" style="font-size: 18px; margin: 40px 0 20px 0; font-size: 25px"><strong
                     style="text-transform: uppercase;">¿Qué son las cookies?</strong>
