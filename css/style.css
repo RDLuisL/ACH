@@ -29,7 +29,7 @@
     color: var(--dark);
 }
 .fw-medium {
-    font-weight: 600 !important;
+    font-weight: 600 ;
 }
 .back-to-top {
     position: fixed;
@@ -37,6 +37,10 @@
     right: 45px;
     bottom: 45px;
     z-index: 99;
+}
+
+.text-justify-custom {
+    text-align: justify;
 }
 
 /*** Spinner ***/
@@ -106,10 +110,10 @@
 .navbar-light .navbar-nav .nav-link.active {
     color: var(--primary);
 }
-@media (max-width: 576px) {
+@media (max-width: 412px) {
     .navbar-light .navbar-nav .nav-link  {
-        margin-right: 0;
-        padding: 10px 0;
+        margin-right: 0 ;
+        padding: 10px 0 ;
     }
     .navbar-light .navbar-nav {
         border-top: 1px solid #EEEEEE;
@@ -127,12 +131,12 @@
     top: -100px;
     transition: .5s;
 }
-@media (min-width: 576px) {
+@media (min-width: 412px) {
     .navbar .nav-item .dropdown-menu {
-        display: block;
-        border: none;
-        margin-top: 0;
-        top: 150%;
+        display: block ;
+        border: none ;
+        margin-top: 0 ;
+        top: 150% ;
         opacity: 0;
         visibility: hidden;
         transition: .5s;
@@ -163,11 +167,11 @@
     width: 3rem;
     height: 3rem;
 }
-@media (max-width: 576px) {
+@media (max-width: 412px) {
     #header-carousel .carousel-item {
         position: relative;
         min-height: 450px;
-    }  
+    }
     #header-carousel .carousel-item img {
         position: absolute;
         width: 100%;
@@ -207,7 +211,7 @@
     background: var(--primary);
 }
 .service .nav .nav-link.active h4 {
-    color: #FFFFFF !important;
+    color: #FFFFFF;
 }
 .nav-link h4 {
     font-size: 0.9rem; /*tamaño de letras*/
@@ -363,7 +367,7 @@
         0px -10px 10px rgba(0, 0, 0, 0.75); /* Sombra hacia arriba */
 }
 .bootstrap-datetimepicker-widget.bottom {
-    top: auto !important;
+    top: auto;
 }
 .bootstrap-datetimepicker-widget .table * {
     border-bottom-width: 0px;
@@ -415,11 +419,11 @@
 }
 
 .testimonial-carousel .owl-item.center .testimonial-text {
-    background: var(--primary) !important;
+    background: var(--primary);
 }
 
 .testimonial-carousel .owl-item.center .testimonial-text * {
-    color: #FFFFFF !important;
+    color: #FFFFFF;
 }
 
 .testimonial-carousel .owl-dots {
