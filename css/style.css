@@ -167,10 +167,13 @@
     width: 3rem;
     height: 3rem;
 }
+
+
 @media (max-width: 412px) {
     #header-carousel .carousel-item {
         position: relative;
-        min-height: 450px;
+        /* min-height: 450px; */
+        height: 50vh;
     }
     #header-carousel .carousel-item img {
         position: absolute;
