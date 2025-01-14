@@ -18,11 +18,11 @@
 *{
     font-family: "League Spartan", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: weight;
     font-style: normal;
 }
 .logo-navbar {
-    width: 35px;
+    width: 70px;
 }
 .text-primary {
     font-style: italic;
@@ -42,6 +42,12 @@
 .text-justify-custom {
     text-align: justify;
 }
+
+.fosis-size {
+    width: 600px;
+    height: 600px;
+}
+
 
 /*** Spinner ***/
 #spinner {

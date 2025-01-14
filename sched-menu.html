@@ -81,7 +81,7 @@
     </div>
     <!-- Topbar End -->
 
-    <!-- Navbar Start -->
+    <!-- Navbar Start ✔️-->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <h2 class="m-0 text-primary" style="color: #303E74 !important">
@@ -89,9 +89,10 @@
                 Auto Carehub
             </h2>
         </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+        
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.html" class="nav-item nav-link active">Inicio</a>
@@ -101,23 +102,22 @@
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Servicios</a>
                     <div class="dropdown-menu fade-up m-0">
-                        <a href="documentation.html#revision-tecnica" class="dropdown-item">Gestión de Revisión Técnica
-                            y otra
-                            Documentación</a>
-                        <a href="mechanic.html" class="dropdown-item">Mecánica Ligera</a>
-                        <a href="wash_detailing.html#wash" class="dropdown-item">Lavado Ecológico de Autos y Detailing a
-                            Domicilio</a>
-                        <a href="mechanic.html#aceite" class="dropdown-item">Cambio de Aceite y Filtros</a>
+                        <a href="documentation.html" class="dropdown-item">Documentos del Vehículo</a>
+                        <a href="mechanic.html" class="dropdown-item">Mantención del Vehiculo</a>
+                        <a href="wash_detailing.html" class="dropdown-item">Limpieza del Interior y Exterior del Vehículo</a>
                         <a href="electrocar.html#parabrisa" class="dropdown-item">Reparación y Cambio de Parabrisas</a>
                         <a href="electrocar.html#paperglass" class="dropdown-item">Papel Polarizado y de Seguridad</a>
-                        <a href="electrocar.html#currentcut" class="dropdown-item">Electroauto y Sistemas de Seguridad</a>
-                        <a href="wash_detailing.html#painting" class="dropdown-item">Latonería y Pintura</a>
+                        <a href="electrocar.html#currentcut" class="dropdown-item">Electroauto y Sistemas de
+                            Seguridad</a>
+                        <a href="wash_detailing.html#painting" class="dropdown-item">Detailing</a>
                         <a href="mechanic.html#lavado_engrase" class="dropdown-item">Lavado Motor, Chasis y Engrase</a>
                     </div>
                 </div>
                 <a href="faqs.html" class="nav-item nav-link">Preguntas Frecuentes</a>
             </div>
-
+            <a href="sched-menu.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block"
+                style="border: none; background-color: #0B0686; color:#DDDC2A">
+                Agende Rápido<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -240,7 +240,7 @@
                     style="text-align: center;">
                     <a href="" class="effect-shine">
                         <img src="img/engrave_glass.png" style="width: 300px;">
-                        <h4 class="d-block fs-4 my-4">Gravado de Patentes</h4>
+                        <h4 class="d-block fs-4 my-4">Grabado de Patentes</h4>
                     </a>
                 </div>
                 <!-- Glass Engrave End-->
@@ -302,14 +302,14 @@
     <script src="lib/whatsapp.js"></script>
     <!-- Whatsapp End -->
 
-    <!-- Footer Start -->
+    <!-- Footer Start ✔️-->
     <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s"
         style="background-image: url('img/fiber_carbon_dark_mesh.jpg')">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 ">
                     <h4 class="text-light mb-4" style="filter: brightness(100%) !important">Contáctenos</h4>
-                    <a href="href="tel:+56986870079" style="color: white" target="_blank">
+                    <a href="href=" tel:+56986870079" style="color: white" target="_blank">
                         <img src="../img/telefono_icono_white.png" style="width: 30px">
                         +56 9 8687 0079
                     </a>
@@ -338,51 +338,69 @@
                 </div>
                 <div class="col-lg-3 ">
                     <h4 class="text-light mb-4">Servicios</h4>
-                    <a class="btn btn-link" href="http://www.autocarehub.cl/documentation.html">Gestión de Revisión Técnica y Documentación</a>
-                    <a class="btn btn-link" href="http://www.autocarehub.cl/mechanic.html">Mecánica Ligera</a>
-                    <a class="btn btn-link" href="http://www.autocarehub.cl/mechanic.html#aceite">Cambio de Aceite</a>
-                    <a class="btn btn-link" href="http://www.autocarehub.cl/mechanic.html#parabrisa">Parabrisas</a>
-                    <a class="btn btn-link" href="http://www.autocarehub.cl/mechanic.html#paperglass">Papel Polarizado y Seguridad</a>
-                    <a class="btn btn-link" href="http://www.autocarehub.cl/electrocar.html">Electroauto y Sistema de Seguridad</a>
+                    <a class="btn btn-link" href="documentation.html">Gestión de Revisión
+                        Técnica y Documentación</a>
+                    <a class="btn btn-link" href="mechanic.html">Mecánica Ligera</a>
+                    <a class="btn btn-link" href="mechanic.html#aceite">Cambio de Aceite</a>
+                    <a class="btn btn-link" href="electrocar.html#parabrisa">Parabrisas</a>
+                    <a class="btn btn-link" href="electrocar.html#paperglass">Papel Polarizado y
+                        Seguridad</a>
+                    <a class="btn btn-link" href="electrocar.html#currentcut">Electroauto y Sistema de
+                        Seguridad</a>
                 </div>
                 <div class="col-lg-3 ">
                     <h4 class="text-light mb-4">Políticas</h4>
-                    <a class="btn btn-link" href="http://www.autocarehub.cl/term_and_cond.html">Términos y Condiciones</a>
-                    <a class="btn btn-link" href="http://www.autocarehub.cl/privacity.html">De Privacidad</a>
+                    <a class="btn btn-link" href="term_and_cond.html">Términos y
+                        Condiciones</a>
+                    <a class="btn btn-link" href="privacity.html">De Privacidad</a>
                 </div>
-                <!-- Contador de visitas -->
-                <div style="display: flex; position: relative; width: 400px; height: 400px; margin-bottom: -150px;">
-                    <!-- Imagen del tacómetro detrás -->
-                    <div style="position: relative; width: 300px; height: 400px;">
-                        <!-- Imagen del tacómetro detrás -->
-                        <img src="img/tacometro.png" 
-                             style="position: absolute; top: 0; left: 0; width: 100%; z-index: 1;" alt="tacometro">
-                        <!-- Imagen del contador de vehiculos encima del tacómetro -->
-                        <img src="https://i.postimg.cc/dtYX4NZN/vehiculos.png" 
-                             style="position: absolute; top: 19%; left: 28%; width: 37px; z-index: 4;" alt="contador de vehiculos">
-                        <!-- Imagen del contador de visitas encima del tacómetro -->
-                        <img src="https://www.web-counter.net/count_20091204.php?c=yrKHilxvgwb" 
-                             style="position: absolute; top: 38%; left: 25%; width: 75px; z-index: 2;" alt="contador de visitas">
+                <div class="container-fluid">
+                    <div class="row align-items-center text-center">
+                        <!-- Contador de visitas -->
+                        <div class="col-lg-6 mb-3" >
+                            <div style="position: relative; width: 100%; max-width: 400px; margin: 0 auto;">
+                                <!-- Imagen del tacómetro detrás -->
+                                <img src="img/tacometro.png"
+                                    style="width: 100%; z-index: 1;" 
+                                    alt="tacometro">
+                                <!-- Imagen del contador de vehiculos encima del tacómetro -->
+                                <img src="https://i.postimg.cc/dtYX4NZN/vehiculos.png"
+                                    style="position: absolute; top: 19%; left: 50%; transform: translateX(-50%); width: 37px; z-index: 4;" 
+                                    alt="contador de vehiculos">
+                                <!-- Imagen del contador de visitas encima del tacómetro -->
+                                <img src="https://www.web-counter.net/count_20091204.php?c=yrKHilxvgwb"
+                                    style="position: absolute; top: 76%; left: 40%; transform: translateX(-50%); width: 75px; z-index: 2;" 
+                                    alt="contador de visitas">
+                            </div>
+                        </div>
+                        <!-- Logo Fosis -->
+                        <div class="col-lg-6 mb-3">
+                            <h5 style="color: white">Con el apoyo de:</h5>
+                            <img src="/img/fosis_logo.png" class="img-fluid" style="max-width: 150px;" alt="logo_fosis">
+                        </div>
                     </div>
-                <!-- Fin Contador de visitas --> 
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="copyright">
-                <div class="row">
-                    <div class=" text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">www.autocarhub.cl</a>, Todos los derechos
-                        reservados@2024.
-                        by <a class="border-bottom" href="https://github.com/RDLuisL" target="_blank"
-                            style="text-decoration: none !important;"> <img src="img/lluna_sign_white.png" alt="RDLuisL"
-                                style="height: 50px; text-decoration: none !important;"> </a>
-                    </div>
-                    <div class=" text-center text-md-end">
-                        <div class="footer-menu">
-                            <a href="http://www.autocarehub.cl/">Inicio</a>
-                            <a href="http://www.autocarehub.cl/cookies.html">Cookies</a>
-                            <a href="http://www.autocarehub.cl/faqs.html">Preguntas Frecuentes</a>
+                </div>
+                
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class=" text-center text-md-start mb-3 mb-md-0">
+                            <h6 style="color: white;">versión 10.7</h6>
+                            &copy; <a class="border-bottom" href="#">www.autocarhub.cl</a>, Todos los derechos
+                            reservados@2024.
+                            by <a class="border-bottom" href="https://github.com/RDLuisL" target="_blank"
+                            style="text-decoration: none !important;"> 
+                            <img src="img/lluna_sign_white.png" alt="RDLuisL" style="width: 80px !important; height: auto !important;"> 
+                        </a>
+                        
+                        
+                        </div>
+                        <div class=" text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="index.html">Inicio</a>
+                                <a href="cookies.html">Cookies</a>
+                                <a href="faqs.html">Preguntas Frecuentes</a>
+                            </div>
                         </div>
                     </div>
                 </div>
