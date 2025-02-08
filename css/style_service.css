@@ -223,7 +223,7 @@
 .service .service-item {
     position: relative;
     overflow: hidden;
-    width: 100%;
+    width: 100% !important;
     height: 100%;
     transition: 0.5s;
     z-index: 1;
@@ -231,6 +231,9 @@
 
 .service .service-item .service-img img {
     transition: 0.5s;
+    width: 500px !important;
+    object-fit: cover; /* Ajusta el tamaño de la imagen sin distorsión */
+    border-radius: 20px; /* Igual al estilo original */
 }
 
 .service .service-item:hover .service-img img {

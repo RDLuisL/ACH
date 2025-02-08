@@ -1,7 +1,7 @@
 .container_steps {
     position: relative;
     max-width: 350px;
-    width: 500px;
+    width: auto;
     height: 400px;
 }
 
@@ -9,7 +9,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 80%;
     height: 100%;
     background: #fff;
     border-radius: 5px;
