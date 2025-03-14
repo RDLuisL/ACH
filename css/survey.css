@@ -22,6 +22,16 @@ html, body {
     inset 0 0 15px rgba(255, 255, 255, 0.05);
 
   }
+
+.label-patente {
+    color: #FFFFFF;
+    margin: 0 0 5px 0;
+}
+
+.input-patente {
+    color: black;
+    margin: 0 0 5px 0;
+}
   
   /* Custom Radio Button */
   p {
