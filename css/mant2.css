@@ -1,0 +1,180 @@
+/* [number] means there's an explanation for that at the very bottom. */
+:root {
+    --π: 3.14159;
+  }
+  
+  .progresscar {
+    --car-width-px: calc(var(--car-width) * 1px);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: var(--car-width-px);
+    height: calc(var(--car-width-px) / 3.2);
+    background: url('progresscar.png') no-repeat center center;
+    background-size: 100%;
+    mix-blend-mode: soft-light;
+    /* [1] */
+    --road-length: calc(100vw - var(--car-width-px));
+    transform: translateX(
+      calc(var(--scroll-y-1) * var(--road-length))
+    );
+  }
+
+  .wheel {
+    --size: calc(var(--car-width) / 14);
+    --size-px: calc(var(--size) * 1px);
+    position: absolute;
+    bottom: calc(var(--size-px) / 2);
+    display: inline-block;
+    width: var(--size-px);
+    height: var(--size-px);
+    background: url('progresscar-rim.png') no-repeat center center;
+    background-size: 100%;
+    /* [2] */
+    --circumference: calc(var(--π) * var(--size));
+    --road-length: calc(var(--vw) - var(--car-width));
+    --rotations: calc(var(--road-length) / var(--circumference));
+    transform: rotate(
+      calc(1turn * var(--rotations) * var(--scroll-y-1))
+    );
+  }
+  
+  /* [3] */
+  .wheel:first-child {
+    left: calc(var(--car-width-px) / 5.4);
+  }
+  
+  /* [3] */
+  .wheel:last-child {
+    right: calc(var(--car-width-px) / 7);
+  }
+  
+  /* boilerplate */
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font: normal 100%/1.5 "Operator Mono", menlo, monaco, monospace;
+  }
+  
+  .container {
+    padding: 1em;
+    transition: all .3s;
+  }
+  
+  @media (min-width: 670px) {
+    .container {
+      width: 640px;
+      margin: 0 auto;
+      padding: 5em 0;
+    }
+  }
+  
+  /* debug mode */
+  .debug-toggle-container {
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    padding: .5em;
+    background: #FFFFFFEE;
+    cursor: pointer;
+  }
+  
+  .debug {
+    width: 100%;
+    padding: 5em;
+    background-image: repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 1.8vw,
+      rgba(0, 0, 0, .2) 2vw
+    );
+  }
+  
+  .debug .heading {
+    font-size: 2em;
+  }
+  
+  .debug .article {
+    opacity: 0;
+  }
+  
+  .debug .ruler {
+    position: fixed;
+    z-index: 0;
+    bottom: calc(30% - 50px);
+    left: 0;
+    width: 100%;
+    height: 50px;
+  }
+  
+  .ruler span {
+    --wheel-size: calc(var(--car-width) / 14);
+    display: block;
+    width: calc(var(--wheel-size) * var(--π) * 1px);
+    height: 100%;
+    float: left;
+  }
+  
+  .ruler span:nth-child(even) {
+    background: pink;
+  }
+  
+  .ruler span:nth-child(odd) {
+    background: black;
+  }
+  
+  .debug .progresscar {
+    bottom: 30%;
+    mix-blend-mode: initial;
+    z-index: 1;
+  }
+  
+  .debug .wheel::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 3px;
+    height: 80px;
+    transform: translateX(-50%);
+    background: lime;
+  }
+  
+  /*
+   * Explanations
+   *
+   * [1] (L:17):
+   * --scroll-y-1 property is provided by kicss.js
+   * It's 0 when the page scroll is 0, and it's 1 when the page scroll reached the bottom.
+   * Here we map scroll-y-1 to translateX.
+   *
+   *
+   * [2] (L:34):
+   * Rotation of each wheel
+   * - wheel circumference: π * size (size = 2r)
+   * - road length: viewport-width - car-width
+   * - scroll-y-1: value between 0 and 1
+   *
+   * We need to use a custom absolute number for viewport-width, instead of 100vw,
+   * because otherwise it can't be multiplied by 1turn
+   *
+   * To calculate how much rotation is needed, this formula is used:
+   * 1turn * scroll-y-1 * (road-length / circumference)
+   *
+   * To put in human language:
+   * For one full wheel rotation to happen, the car must move exactly as much
+   * as the circumference of the wheel. This means page should be scrolled just
+   * enough for the car to move exactly one-wheel-circumference forward.
+   *
+   *
+   * [3] (L:43, L:48):
+   * arbitrary positioning based on the car image used. 
+   *
+   *
+   *
+   * Credits:
+   * Car picture source: https://www.carolenash.com/news/classic-car-news/detail/bullitt-mustang-to-be-restored-and-put-on-the-road-again
+   */
