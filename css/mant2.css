@@ -12,7 +12,7 @@
     height: calc(var(--car-width-px) / 3.2);
     background: url('progresscar.png') no-repeat center center;
     background-size: 100%;
-    mix-blend-mode: soft-light;
+   C:\Users\luisl\Desktop\AutoCarehub_V5   mix-blend-mode: soft-light;
     /* [1] */
     --road-length: calc(100vw - var(--car-width-px));
     transform: translateX(
