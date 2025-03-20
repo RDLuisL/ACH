@@ -4,8 +4,9 @@
   }
   
   .progresscar {
-    --car-width-px: calc(var(--car-width) * 1px);
-    position: fixed;
+    --car-width-px: calc(var(--car-width) * 1px);git add .
+    git commit -m "auto-commit"
+    
     bottom: 0;
     left: 0;
     width: var(--car-width-px);
